@@ -1,0 +1,38 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+		<div class="row" style="margin-top:-70px">
+			<div class="col-10">
+				<h1>정문 맛집</h1>
+			</div>
+		<div>
+			<p>경기대학교 정문에 있는 맛집들에 대한 정보입니다.</p>
+		</div>
+		<span class="image main"><img src="{% static 'images/KGU5-1.jpg' %}" alt="" style="height: 500px"/></span>
+		<div>
+			<section class="tiles">
+				<article class="style1" style="width: 563px; height: 100px;">
+					<span class="image">
+						<img src="{% static 'images/food.jpeg' %}" alt="" />
+					</span>
+					<a href="/outside_front_restaurant">
+						<h2>식당</h2>
+					</a>
+				</article>
+				<article class="style1" style="width: 563px; height: 100px;">
+					<span class="image">
+						<img src="{% static 'images/cafePic.png' %}" alt="" />
+					</span>
+					<a href="/outside_front_cafe">
+						<h2>카페</h2>
+					</a>
+				</article>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

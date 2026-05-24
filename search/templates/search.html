@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div style="display: flex; margin-left:10%; margin-right:10%;">
+    <section class="tiles" style="padding-bottom: 50px;">
+        {% for r in result %}
+            <article class="style1" style="width: 250px; height: 250px;">
+                <span class="image">
+                    <img src="/media/{{ r.image }}" alt="" />
+                </span>
+                <a href="/{{ r.reference }}/{{ r.id }}">
+                    <h2>{{ r.name }}</h2>
+                    <div class="content">
+                        <p>{{ r.category }}</p>
+                    </div>
+                </a>
+            </article>
+        {% endfor %} 
+        {% for p in post %}
+            <article class="style1" style="width: 250px; height: 250px;">
+                <span class="image">
+                    <img src="/media/{{ p.image }}" alt="" />
+                </span>
+                <a href="/post/{{ p.id }}">
+                    <h2>{{ p.title }}</h2>
+                    <div class="content">
+                        <p>{{ p.description }}</p>
+                    </div>
+                </a>
+            </article>
+        {% endfor %} 
+        {% for s in scholarship %}
+            <article class="style1" style="width: 250px; height: 250px;">
+                <span class="image">
+                    <img src="{% static 'images/default_image.png' %}" alt="" />
+                </span>
+                <a href="/{{ s.reference }}/{{ s.id }}">
+                    <h2>{{ s.name }}</h2>
+                </a>
+            </article>
+        {% endfor %} 
+    </section>
+</div>
+{% endblock %}

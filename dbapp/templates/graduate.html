@@ -1,0 +1,39 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+        <div class="row" style="margin-top:-70px">
+			<div class="col-10">
+				<h1>졸업요건</h1>
+			</div>
+		</div>
+        <div>
+            <p>경기대학교 졸업요건에 대한 정보게시판 입니다.</p>
+        </div>
+		<span class="image main"><img src="{% static 'images/multimajor_main.png' %}" alt="" /></span>
+		<div>
+			<h2 style="margin-bottom:-70px;">졸업요건 정보</h2>
+		</div>
+        <section class="tiles">
+            <article class="style1" style="width: 563px; height: 100px;">
+                <span class="image">
+                    <!--<img src="{% static 'images/food.JPEG' %}" alt="" />-->
+                </span>
+                <a href="/graduate_freshman">
+                    <h2>신입생 졸업요건</h2>
+                </a>
+            </article>
+            <article class="style1" style="width: 563px; height: 100px;">
+                <span class="image">
+                    <!--<img src="{% static 'images/cafe.jpg' %}" alt="" />-->
+                </span>
+                <a href="/graduate_transferman">
+                    <h2>편입생 졸업요건</h2>
+                </a>
+            </article>
+            </section>
+	</div>
+</div>
+{% endblock %}

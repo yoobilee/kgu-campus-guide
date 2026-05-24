@@ -1,0 +1,416 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+		<div class="row" style="margin-top:-70px">
+			<div class="col-10">
+				<h1>동아리</h1>
+			</div>
+			<div class="col-1">
+                {% if user.is_authenticated %}
+				<a href="{% url 'club_create' %}"><button class="btn btn-primary" style="height:40px; margin-left:-15px; display:flex; align-items:center;">동아리 등록하기</button></a>
+                {% endif %}
+			</div>
+		</div>
+		<div>
+            <p>경기대학교 동아리에 대한 정보입니다.</p>
+        </div>
+		<span class="image main"><img src="{% static 'images/club.png' %}" alt="" /></span>
+		<div>
+			<h2 style="margin-bottom:-70px;">중앙 동아리 정보</h2>
+			<br>
+		</div>
+		<hr>
+		<div>
+			<button id="spreadBtn41" class="restaurant">
+				<h3><img src="{% static 'images/location.png' %}" style="width:20px;height:20px;"/>동아리 배치도(동아리방 위치)</h3>
+			</button>
+			<ul id="hiddenList41" class="example01" style="display: none;">
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 2000 //기본 5초
+    })
+  </script>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner1">
+      <!-- 슬라이드 쇼 -->
+      <div class="carousel-item active">
+        <!--가로-->
+        <img class="d-block w-100" 
+          src="{% static 'images/club1.jpg' %}"
+          alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/club2.jpg' %}"
+          alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/club3.jpg' %}"
+          alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/club4.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/club5.jpg' %}"
+          alt="Fifth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/club6.jpg' %}"
+          alt="Sixth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/club7.jpg' %}"
+          alt="Seventh slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/club8.jpg' %}"
+          alt="Eighth slide">
+      </div>
+    
+    <!-- / 슬라이드 쇼 끝 -->
+
+    <!-- 왼쪽 오른쪽 화살표 버튼 -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <!-- <span>Previous</span> -->
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <!-- <span>Next</span> -->
+    </a>
+    <!-- / 화살표 버튼 끝 -->
+    
+    <!-- 인디케이터 -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li> <!--0번부터시작-->
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+      <li data-target="#demo" data-slide-to="5"></li>
+      <li data-target="#demo" data-slide-to="6"></li>
+      <li data-target="#demo" data-slide-to="7"></li>
+    </ul>
+    <!-- 인디케이터 끝 -->
+  </div>
+		</div>
+		</ul>
+		<div>
+      <table class="table_FrontRestaurant">
+        <tbody class="tbody_FrontRestaurant">
+        <tr style="background-color: rgba(144, 144, 144, 0.075);">
+          <th style="text-align: center; border-right: solid 1px #c9c9c9; width:75px">분과</th>
+          <th style="text-align: center; border-right: solid 1px #c9c9c9; width:150px">동아리명</th>
+          <th style="text-align: center; border-right: solid 1px #c9c9c9;">동아리활동</th>
+          <th style="text-align: center; border-right: solid 1px #c9c9c9;">주요활동</th>
+          <th style="text-align: center; border-right: solid 1px #c9c9c9; width: 120px">비고</th>
+        </tr>
+        <tr>
+            <td rowspan="7" style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">학술</td>
+            <td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">K.knock</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">경기대학교 침해사고대응팀(CERT) 운영, 대내외의 해킹&보안 컨퍼런스 및 대회 참가. Web, System, Network Hacking, Reverse Engineering 분야 공부, 기타 보안 이슈들을 다루고 있음.</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">해킹&보안 컨퍼런스 및 대회 참가, 기타 보안 이슈</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=cl2cw42k&messageNo=5&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br>홈페이지: <a href="https://kknock.org/" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">TIME</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">외국어 연구를 통한 대학인으로서의 지식 및 인격 향상</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">경기인의 외국어 실력 향상, 타임지 공개 강의</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=cl2cw42k&messageNo=6&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">I.Lab</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">가치투자를 공부 각 팀별로 주제(기업분석, 산업분석 등)를 정하여 활동 매주 정해진 요일엔 동아리 전체가 모여 강의를 듣거나 팀 활동 발표</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">가치투자, 기업분석, 산업분석 등</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=cl2cw42k&messageNo=3&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/ilab.kgu/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">Discovention</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">전국 대학생 발명동아리 연합회(전발연) 소속 동아리로 활동. 아이디어 개발, 개발내용의 문서화, 시제품제작, 특허출원을 통한 아이디어 보호 방법, 자기능력 개발과 향상</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">아이디어 개발, 개발내용의 문서화, 시제품제작, 특허출원</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=cl2cw42k&messageNo=2&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">세상바꾸러</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">대중매체를 이용하여 사회에 걸친 모든 것을 주제로 세상 속의 잘못된 상식과 인습을 타파하고 바꾸어 나가는 것을 추구함</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">토론, 학술제 및 회지발간</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=cl2cw42k&messageNo=1&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">"AD's ON"</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">광고연구를 통해 예비광고인으로서의 자질 향상</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">광고 관련기획 마케팅 광고, 공모전 참가</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">조선날틀</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">비행기에 관심이 있는 사람들이 모여 비행기에 대해 연구하고 제작하여 각종 대회에 참가</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">각종 대회 참가 및 입상</td>
+						<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=cl2cw42k&messageNo=4&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/csnt_2000/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+        </tr>
+				<tr>
+					<td rowspan="4" style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">평면예술</td>
+					<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">그림그린</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">만화 창작 및 그림전을 통해 대학의 올바른 만화 문화 창달을 위해 노력</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">만화전시회 신입생 대상 회지 제작</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;"></td>
+			</tr>
+			<tr>
+					<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">빛터</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">다양한 시사회와 영화 평론 그리고 영화 제작을 통하여 좋은 영화를 선별할 수 있는 안목을 기르고 대학의 영상문화를 위해 노력</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">영화관람 및 토론, 각종 창작활동, 영화제 개최</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=e2rugj1z&messageNo=5&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+			</tr>
+			<tr>
+					<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">연서회</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">서예활동을 통한 정서 함양 및 취미활동으로 대학문화 창달에 일익을 기여</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">서예 활동을 통한 정서 함양</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=e2rugj1z&messageNo=1&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgu_calligraphy_/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+			</tr>
+			<tr>
+					<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">희광</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">사진예술을 통한 우호와 친선을 도모함으로써 미와 기의 창조에 적극적으로 참여하여 이상적 대학인상을 구현</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">사진 전시, 하계 · 동계촬영 실시</td>
+					<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=e2rugj1z&messageNo=2&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgu_heekwang/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+			</tr>
+			<tr>
+				<td rowspan="4" style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">사회</td>
+				<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">ISF</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">경기대 유학생들에게 도움을 주고자 설립한 동아리 유학생 대상 한글 교육, 특별활동 (추석행사, 크리스마스행사), 멘토링을 통해 유학생과 유대</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">유학생 대상 한글 교육 추석행사, 크리스마스행사</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=e1xmndnt&messageNo=1&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+		</tr>
+		<tr>
+				<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">사이</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소외계층의 주거 환경을 개선하는 봉사활동 동아리 벽지교체, 도배·장판교체 봉사, 연탄나르기 봉사, 벽화그리기 봉사</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소외계층의 주거 환경을 개선하는 봉사활동</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=e1xmndnt&messageNo=2&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+		</tr>
+		<tr>
+				<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">ENACTUS</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">세계 대학 및 유수 기업들의 파트너십 비즈니스 프로젝트 실행 한국에 거주하고 있는 고려인 자녀들의 보육환경, 한글교육문제 개선, 맞춤형 보육프로그램을 진행하는 프로젝트 진행</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">비즈니스 프로젝트 실행, 고려인 자녀보육환경, 한글교육문제 개선</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=e1xmndnt&messageNo=4&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/enactus_kgu/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+		</tr>
+		<tr>
+				<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">UNYP</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">UN의 가치와 이념을 공유하고 SDGs 목표 실현을 위한 방안을 모색하는 것이 목적. 국제 사회를 살아가는데 필요한 지식을 얻고 국제개발탐방등 타 대학과 교류활동같은 다양한 활동 경험가능</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">SDGs 17가지 목표에 대한 학술세미나 진행 및 환경 보호 관련사업 활동</td>
+				<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;"><a href="https://www.instagram.com/kyonggi_unyp/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+		</tr>
+		<tr>
+			<td rowspan="6" style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">종교</td>
+			<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">CCC</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">캠퍼스 내에 예수님을 전하고 대학인들의 가슴속에 그리스도를 심어 인간의 중심을 변화시키는 영적인 운용을 일으키고자 함</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">성경공부 캠퍼스 내에 그리스도 소개</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=d8z83yvu&messageNo=1&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kguccc/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+	</tr>
+	<tr>
+			<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">ESF</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">성경운동, 연합운동, 공동체운동, 상담, 치료운동</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">성경운동, 연합운동, 공동체운동, 상담, 치료운동</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=d8z83yvu&messageNo=5&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+	</tr>
+	<tr>
+			<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">유니피스</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">불교를 통해 행복한 생활 추구와 국가 번영, 세계 평화 실현에 기여</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">캠퍼스 평화문화 활동 세계인권 문제 발표 등</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=d8z83yvu&messageNo=6&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/unipeace2030/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+	</tr>
+	<tr>
+			<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">가톨릭학생회</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">기독생활과 교리 교육을 통하여 자기정화와 캠퍼스의 복음화를 이룸</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">미사봉헌, 교리교육</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=d8z83yvu&messageNo=2&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+	</tr>
+	<tr>
+			<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">경불회</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">대학생 불자들의 불교에 대한 관심과 이해를 높이고, 자비를 바탕으로 조화롭게 살아가는 방법을 함양시킴</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">불교 강연회 법화 및 초파일행사</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;"><a href="https://www.instagram.com/kgu_buddha/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+	</tr>
+	<tr>
+			<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">CFM</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">예배를 통해 예수님을 캠퍼스에 전하고 수화 공연으로 올바른 공연문화 조성</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">문화선교, 캠퍼스 내에서 그리스도 소개</td>
+			<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=d8z83yvu&messageNo=4&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgu_cfm/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+	</tr>
+	<tr>
+		<td rowspan="13" style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">생활건강</td>
+		<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">BGM</td>
+		<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">보드게임을 통한 친목 도모 및 보드게임 개발 및 연구. 정기활동 시간을 통해 보드게임을 익히고 매 분기별 동아리 내 보드게임 대회인 ‘페스타’를 진행.</td>
+		<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">보드게임 개발 및 연구. 보드게임 대회 ‘페스타’ 진행	</td>
+		<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=13&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgu_bgm/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">Gastro Nomad</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">맛집 기행을 통하여 기쁨을 찾고 나아가 맛의 조화를 탐구. 나라, 지역 등 테마별 맛집 컨텐츠를 기획하고 활동 후 전용 인스타그램으로 후기를 전달.</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">맛집 탐방 컨텐츠 기획 및 활동</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=10&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/gastro._.nomad/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">슈테른</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">매주 실내외 코트에서 훈련 진행, 각종 대학 농구 동아리 대회 참가 및 아마추어 대학 농구 대회인 광교배 직접 주최. 여학우들 또한 훈련 및 경기 참여가 가능하고 스코어보드, 기록지 작성 등의 활동 참여가능.</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">대학 농구 동아리 대회 참가, 광교배 주최</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;"></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">DROP-IN</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">스노우보드 기술발전과 대중화를 앞장서고 보더들간의 친목도모 및 공감대 형성을 위해 활동</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">KUSBF소속 강사자격증 취득, 해외원정</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=8&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">HATTRICK</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">축구에 대한 열의와 애정이 있는 사람들의 모임으로 경기를 통한 친목 도모와 체력향상이 목적</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">각종 대회 참가</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;"><a href="https://www.instagram.com/kgu_hattrick/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">KGB</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">야구를 사랑하는 경기대 학우들의 친목 도모와 야구를 통한 심신 단련</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">대학아마리그 참가</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=9&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgbdragons/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">KTC</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">여행을 통해 지역의 특색 있는 문화와 자연을 느끼고 그를 바탕으로 한 교육적 취지를 목적으로 함</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">자유여행, 카니발</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=11&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/ktc_kgu/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">KTF</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">테니스를 통하여 폭넓은 대인관계를 갖고, 여가선용을 위한 삶의 즐거움의 목표를 달성하기 위함</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">테니스 강습, 타학교와 교환 경기</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=4&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/ktfgogo/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">검도동우회</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">검도수련을 통한 강인한 정신력과 체력을 배양하려는 목적임</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">하계 방학 중 극기 훈련, 전국대회 출전</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=3&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">산악회</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">자연을 벗 삼아 심신을 단련하고, 선후배간의 교우관계를 형성하여 발전된 학교생활을 만들어 감</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">서울근교 산행 방학 중 하계, 동계 훈련</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=1&mode=view&query=&queryType=0&myList=0&page=3" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/k_climbing_/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">청우회</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">탁구를 통한 건전한 자기성장, 캠퍼스생활에서 충족한 동아리활동을 누리게 함</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">경인지구, 전국동호인 탁구대회 참가</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=2&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgu_ttc.official/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">태풍</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">태권도를 수련함으로써 심신을 단련하는 동아리임 전국 겨루기, 품새 대회 및 행사에 참가. 매주 3회 운동을 하며, 분기별로 타 대학과 교류전</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">전국 대회참가, 매주 3회 운동, 타 대학과 교류전</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=5&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgu_tae_poong/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">펜싱동아리</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">펜싱을 통한 심신 단련, 펜싱 지도, 대학 교류전</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">펜싱 지도 대학 교류전</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=ehum70rd&messageNo=6&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgu_fencing/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td rowspan="12" style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">공연예술</td>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">CHAMBER</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">관현악 동아리로서 클래식 음악을 좋아하고 악기를 다룰 수 있는 아름다운 아마추어를 만들어감</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">정기공연 대내·외 음악 활동	</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=12&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/chamber_kgu/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">DNP</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">힙합을 사랑하는 사람들이 모여 함께 즐기고 아직 힙합문화가 생소한 사람들에게는 힙합문화를 소개</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">대내·외 행사지원 및 공연</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=3&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgu_dnp/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">GUEST</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">춤을 즐기고 사랑하는 사람들이 모여 다양한 장르의 춤을 배우고, 건전한 대학의 춤 문화를 선도하며 회원 간의 친목 도모</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">거리공연, 정기공연, 찬조공연 및 대회 참가</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=9&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/guest_kgu/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">KUC</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">교내의 다양한 응원단의 연합 동아리임 겨울정기공연, 해오름제, 체육대회, 대동제 등 각종 행사 공연</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">응원단 연합 동아리</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=6&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">SUS4</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">통기타를 배우고 싶은 사람들의 모임, 자신의 실력을 함께 나누고 싶은 사람들의 모임</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">정기공연 통기타 강습</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=4&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">트라움</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">어쿠스틱과 록 음악 인디밴드 음악 동아리, 정기공연</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">어쿠스틱과 록 음악, 인디밴드 음악, 정기공연</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=14&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">나루</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">극 작품 제작, 공연 종합예술 동아리. 공연마다 연출/기획/배우/조명/음향/무대/분장 분야를 나누고 각 분야의 능력함양</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">극 작품 제작, 공연 종합예술 동아리.</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=5&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/_naru_2023/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">Rock’a Billy</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">음악을 통한 회원 간의 친목 도모와 순수한 음악을 추구</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">연2회 정기공연 신입생 Work-shop공연</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=16&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/rock.a_billy/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">소리사냥</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">Group 활동을 통한 구성원 간의 친목 도모와 음악 감상 활동을 통한 정서 함양</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">주 1회 음악 감상 연 2회 정기공연 활동</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=10&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/soundhunt_official/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">소울음</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">민중문화 연구모임으로서 회원들 간의 상호협력을 바탕으로 공동체의식 함양과 유대강화가 목적임</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">교내외 공연 민중 노래발표 및 창작보급</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=11&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/soulmuziq_88/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">아르페지오</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">취미와 오락의 수준을 벗어나고 기성과 타성을 깸으로써 높은 음악성을 추구, 창작 가요의 활성화 추구</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">정기발표회 학내외 가요제 참가</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=8&mode=view&query=&queryType=0&myList=0&page=2" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/kgu_arpeggio/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+<tr>
+	<td style="background-color: rgba(144, 144, 144, 0.075); vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: bolder;">THE NUMBER</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">뮤지컬에 관심있는 사람들의 모임 대학축제 공연, 뮤지컬 지도</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">각종 공연 뮤지컬 관람</td>
+	<td style="vertical-align: middle; border-right: solid 1px #c9c9c9; font-weight: lighter; font-size: medium;">소개글: <a href="https://kyonggi39pairing.modoo.at/?link=6p2bpdwt&messageNo=13&mode=view&query=&queryType=0&myList=0&page=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a><br><a href="https://www.instagram.com/thenumber_kgu/" target="_blank"><img src="{% static 'images/instagram_logo.png' %}" style="width:15px;height:15px;">인스타그램</a></td>
+</tr>
+      </tbody>
+      </table>
+    </div>
+	</div>
+</div>
+{% endblock %}

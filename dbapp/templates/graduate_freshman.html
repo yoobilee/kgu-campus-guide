@@ -1,0 +1,196 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+        <div class="row" style="margin-top:-70px">
+			<div class="col-10">
+				<h1>졸업요건</h1>
+			</div>
+		</div>
+        <div>
+            <p>경기대학교 졸업요건에 대한 정보게시판 입니다.</p>
+        </div>
+        <hr>
+        <ul>
+          <li>졸업요건: 졸업학점, 졸업논문(시험/작품), 인권과 성평등교육, 졸업인증제를 이수한 자.</li>
+      </ul>
+      <table class="table tyep2">
+        <colgroup>
+            <col class="w30p">
+            <col class="w70p">
+        </colgroup>
+        <tbody class="tbody1">
+            <tr>
+                <th scope="row">졸업이수학점</th>
+                <td class="text_left" >130[일부학과(전공)136, 건축학과160]<p class="warning type1" style="font-weight: light; font-size: small;"><span class="skip">⚠️</span>교양최소 이수학점 및 기타 이수학점은 교육과정 참조</p></td>
+            </tr>
+            <tr>
+                <th scope="row">졸업논문<br>(시험/작품)</th>
+                <td class="text_left">
+                    <strong>자격</strong>
+                    <ul class="bu">
+                        <li>졸업학년도 최종학기에 달하고 소정의 학점을 취득한 자.</li>
+                    </ul>
+                    <strong>제출시기</strong>
+                    <ul class="bu">
+                        <li>졸업학년도 최종학기 개시일로부터 2개월 이내</li>
+                    </ul>
+                    <strong>자격유효</strong>
+                    <ul class="bu">
+                        <li>논문심사에 합격한 자가 졸업요건이 미달되어 졸업할 수 없는 경우에는 논문 합격자격을 1년간 인정(단, 휴학(군휴학포함) 기간은 제외)</li>
+                        <li>논문제출 후 졸업인정학점을 이수한 미졸업생의 경우는 유효기간이 없이 인정</li>
+                    </ul>
+                    <p class="warning type1" style="font-weight: light; font-size: small;"><span class="skip">⚠️</span>학칙 2-1-4 졸업논문 시행규정 참조</p>
+                    <a href="http://rule.kyonggi.ac.kr/lmxsrv/law/lawFullView.do?SEQ=45&amp;SEQ_HISTORY=319" target="_blank" title="새창" class="blank" style="font-weight: lighter; font-size: small;"><span>바로가기</span></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">인권과<br>성평등교육</th>
+                <td class="text_left">
+                    <strong>대상</strong>
+                    <ul class="bu">
+                        <li>2020학년도 입학생부터(편입생은 2018학번부터)</li>
+                    </ul>
+                    <strong>졸업자격</strong>
+                    <ul class="bu">
+                        <li>성희롱·성매매·성폭력·가정폭력 예방교육을 수업연한 내 연 1회 각 1시간 씩 이수한 자(신입학 16시간 이상, 편입학 8시간 이상)</li>
+                    </ul>
+                    <p class="warning type1" style="font-weight: light; font-size: small;"><span class="skip">⚠️</span>학칙 2-1-4 인권과 성평등교육 시행규정 참조</p>
+                    <a href="http://rule.kyonggi.ac.kr/lmxsrv/law/lawFullView.do?SEQ=43&amp;SEQ_HISTORY=18&amp;REFID=" target="_blank" title="새창" class="blank" style="font-weight: lighter; font-size: small;"><span>바로가기</span></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">졸업인증제</th>
+                <td class="text_left">
+                    <strong>대상</strong>
+                    <ul class="bu">
+                        <li>2017학년도 입학생부터(2017학년도 이전 입학생은 희망자).</li>
+                        <li>다만, 체육특기자, 외국인학생, 학사편입생, 북한이탈주민, 계약학과학생, 장애정도가 심한(중증) 장애학생(장애학생지원센터에 등록한 자)는 제외</li>
+                    </ul>
+                    <strong>인증자격</strong>
+                    <ul class="bu">
+                        <li>다전공인증, 심화전공인증, 현장실습학기제인증, 외국어인증, KGU+인증의 5개 분야 중 2개 분야의 인증자격 취득</li>
+                    </ul>
+                    <p class="warning type1" style="font-weight: light; font-size: small;"><span class="skip">⚠️</span>학칙 2-1-4 졸업인증제 시행 규정 참조</p>
+                    <a href="http://rule.kyonggi.ac.kr/lmxsrv/law/lawFullView.do?SEQ=46&amp;SEQ_HISTORY=332" target="_blank" title="새창" class="blank" style="font-weight: lighter; font-size: small;"><span>바로가기</span></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <strong><em>[졸업인증제자격요건]</em></strong>
+    <ul>
+      <li>5개 영역 중 2개 이상 영역에서 각 영역별 1개 이상의 이수자격을 취득하여야 한다.</li>
+  </ul>
+  <table class="table responsive">
+    <thead>
+        <tr>
+            <th scope="col">영역</th>
+            <th scope="col">이수자격</th>
+            <th scope="col">비고</th>
+        </tr>
+    </thead>
+    <tbody class="tbody2">
+        <tr>
+            <td data-content="영역">심화전공인증</td>
+            <td data-content="이수자격">
+                <ul class="bu">
+                    <li>주전공을 80학점 이상 이수한 자 또는</li>
+                    <li>공학인증 또는 건축학인증을 이수한 자</li>
+                </ul>
+            </td>
+            <td data-content="비고">&nbsp;</td>
+        </tr>
+        <tr>
+            <td data-content="영역">다전공인증</td>
+            <td data-content="이수자격">
+                <ul class="bu">
+                    <li>복수전공 부전공, 교직, 학생군사교육단 과정 중 1개 이상 이수한 자</li>
+                </ul>
+            </td>
+            <td data-content="비고">&nbsp;</td>
+        </tr>
+        <tr>
+            <td data-content="영역">현장실습학기제인증</td>
+            <td data-content="이수자격">
+                <ul class="bu">
+                    <li>우리대학 현장실습학기제 규정에 의거 6학점 이상 이수한 자</li>
+                </ul>
+            </td>
+            <td data-content="비고">&nbsp;</td>
+        </tr>
+        <tr>
+            <td data-content="영역">외국어인증</td>
+            <td data-content="이수자격">
+                <ul class="bu">
+                    <li>외부기관에서 실시하는 공인어학시험 기준통과자 (표1 참고) 또는 </li>
+                    <li>대학영어 1,2,3,4,5(총15학점) 이수자</li>
+                </ul>
+            </td>
+            <td data-content="비고">&nbsp;</td>
+        </tr>
+        <tr>
+            <td data-content="영역">KGU+인증</td>
+            <td data-content="이수자격">
+                <ul class="bu">
+                    <li>KGU+포인트 140포인트 이상 취득 또는</li>
+                    <li>교양강좌 취·창업영역에서 총6학점 이상 취득하고, 취업·창업영역 비교과 프로그램 80포인트 이상 취득할 경우 취·창업역량인증으로 인정</li>
+                </ul>
+            </td>
+            <td data-content="비고">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<em><p class="table_unit">&lt;표 1-외국어인증 공인어학시험 통과기준 표&gt;</p></em>
+<div class="table_scroll">
+  <table class="table_graduate">
+      <caption>&lt;(신설 2017.3.1.)(개정 2018.12.17., 2020.1.16., 2022.12.9.)-구분,TOEIC,TOEFL(MBS인정),TEPS,TOEIC Speaking,Opic,JPT(일) ,JLРТ(일),ZD(독),DaF (독),DELF(프),HSK(중),TORFL(러) FLEX(러) 등의 정보를 제공하고 있습니다.&gt;</caption>
+      <thead class="thread_graduate">
+          <tr>
+              <th scope="col">구분</th>
+              <th scope="col">TOEIC</th>
+              <th scope="col">TOEFL<br>(MBS인정)</th>
+              <th scope="col">TEPS</th>
+              <th scope="col">TOEIC<br>Speaking</th>
+              <th scope="col">Opic</th>
+              <th scope="col">JPT<br>(일)</th>
+              <th scope="col">JLРТ<br>(일)</th>
+              <th scope="col">ZD<br>(독)</th>
+              <th scope="col">DaF<br>(독)</th>
+              <th scope="col">DELF<br>(프)</th>
+              <th scope="col">HSK<br>(중)</th>
+              <th scope="col">TORFL<br>(러)</th>
+              <th scope="col">FLEX<br>(러)</th>
+          </tr>
+      </thead>
+      <tbody class="tbody_freshman">
+          <tr>
+              <td>일반</td>
+              <td>650</td>
+              <td>70</td>
+              <td>245</td>
+              <td>90</td>
+              <td>IL</td>
+              <td rowspan="2">600</td>
+              <td rowspan="2">2급</td>
+              <td rowspan="2">통과</td>
+              <td rowspan="2">3등급</td>
+              <td rowspan="2">통과</td><td rowspan="2">5급</td><td rowspan="2">1단계<br>이상</td>
+              <td rowspan="2">2급<br>B이상</td>
+          </tr>
+          <tr>
+              <td>관광<br>계열</td>
+              <td>700</td>
+              <td>79</td>
+              <td>264</td>
+              <td>120</td>
+              <td>IM2</td>
+          </tr>
+      </tbody>
+  </table>
+</div>  
+	</div>
+</div>
+{% endblock %}

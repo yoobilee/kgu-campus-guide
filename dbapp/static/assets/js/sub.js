@@ -1,0 +1,775 @@
+$(document).ready(function(){
+	$("#spreadBtn01").click(function(){
+		if($("#hiddenList01").is(":visible")){
+			$("#hiddenList01").slideUp();
+		}else{
+			$("#hiddenList01").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn02").click(function(){
+		if($("#hiddenList02").is(":visible")){
+			$("#hiddenList02").slideUp();
+		}else{
+			$("#hiddenList02").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn03").click(function(){
+		if($("#hiddenList03").is(":visible")){
+			$("#hiddenList03").slideUp();
+		}else{
+			$("#hiddenList03").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn04").click(function(){
+		if($("#hiddenList04").is(":visible")){
+			$("#hiddenList04").slideUp();
+		}else{
+			$("#hiddenList04").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn05").click(function(){
+		if($("#hiddenList05").is(":visible")){
+			$("#hiddenList05").slideUp();
+		}else{
+			$("#hiddenList05").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn06").click(function(){
+		if($("#hiddenList06").is(":visible")){
+			$("#hiddenList06").slideUp();
+		}else{
+			$("#hiddenList06").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn07").click(function(){
+		if($("#hiddenList07").is(":visible")){
+			$("#hiddenList07").slideUp();
+		}else{
+			$("#hiddenList07").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn08").click(function(){
+		if($("#hiddenList08").is(":visible")){
+			$("#hiddenList08").slideUp();
+		}else{
+			$("#hiddenList08").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn09").click(function(){
+		if($("#hiddenList09").is(":visible")){
+			$("#hiddenList09").slideUp();
+		}else{
+			$("#hiddenList09").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn09").click(function(){
+		if($("#hiddenList09").is(":visible")){
+			$("#hiddenList09").slideUp();
+		}else{
+			$("#hiddenList09").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn10").click(function(){
+		if($("#hiddenList10").is(":visible")){
+			$("#hiddenList10").slideUp();
+		}else{
+			$("#hiddenList10").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn11").click(function(){
+		if($("#hiddenList11").is(":visible")){
+			$("#hiddenList11").slideUp();
+		}else{
+			$("#hiddenList11").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn12").click(function(){
+		if($("#hiddenList12").is(":visible")){
+			$("#hiddenList12").slideUp();
+		}else{
+			$("#hiddenList12").slideDown();
+		}
+	});
+});
+
+/*강의동*/
+
+$(document).ready(function(){
+	$("#spreadBtn13").click(function(){
+		if($("#hiddenList13").is(":visible")){
+			$("#hiddenList13").slideUp();
+		}else{
+			$("#hiddenList14").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList13").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn14").click(function(){
+		if($("#hiddenList14").is(":visible")){
+			$("#hiddenList14").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList14").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn15").click(function(){
+		if($("#hiddenList15").is(":visible")){
+			$("#hiddenList15").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList14").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList15").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn16").click(function(){
+		if($("#hiddenList16").is(":visible")){
+			$("#hiddenList16").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList14").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList16").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn17").click(function(){
+		if($("#hiddenList17").is(":visible")){
+			$("#hiddenList17").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList14").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList17").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn18").click(function(){
+		if($("#hiddenList18").is(":visible")){
+			$("#hiddenList18").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList14").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList18").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn19").click(function(){
+		if($("#hiddenList19").is(":visible")){
+			$("#hiddenList19").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList14").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList19").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn20").click(function(){
+		if($("#hiddenList20").is(":visible")){
+			$("#hiddenList20").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList14").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList20").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn21").click(function(){
+		if($("#hiddenList21").is(":visible")){
+			$("#hiddenList21").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList14").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList21").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn22").click(function(){
+		if($("#hiddenList22").is(":visible")){
+			$("#hiddenList22").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList14").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList23").slideUp();
+			$("#hiddenList22").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn23").click(function(){
+		if($("#hiddenList23").is(":visible")){
+			$("#hiddenList23").slideUp();
+		}else{
+			$("#hiddenList13").slideUp();
+			$("#hiddenList14").slideUp();
+			$("#hiddenList15").slideUp();
+			$("#hiddenList16").slideUp();
+			$("#hiddenList17").slideUp();
+			$("#hiddenList18").slideUp();
+			$("#hiddenList19").slideUp();
+			$("#hiddenList20").slideUp();
+			$("#hiddenList21").slideUp();
+			$("#hiddenList22").slideUp();
+			$("#hiddenList23").slideDown();
+		}
+	});
+});
+
+/*편의시설*/
+$(document).ready(function(){
+	$("#spreadBtn24").click(function(){
+		if($("#hiddenList24").is(":visible")){
+			$("#hiddenList24").slideUp();
+		}else{
+			$("#hiddenList24").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn24-1").click(function(){
+		if($("#hiddenList24-1").is(":visible")){
+			$("#hiddenList24-1").slideUp();
+		}else{
+			$("#hiddenList24-1").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn24-2").click(function(){
+		if($("#hiddenList24-2").is(":visible")){
+			$("#hiddenList24-2").slideUp();
+		}else{
+			$("#hiddenList24-2").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn24-3").click(function(){
+		if($("#hiddenList24-3").is(":visible")){
+			$("#hiddenList24-3").slideUp();
+		}else{
+			$("#hiddenList24-3").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn25").click(function(){
+		if($("#hiddenList25").is(":visible")){
+			$("#hiddenList25").slideUp();
+		}else{
+			$("#hiddenList25").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn26").click(function(){
+		if($("#hiddenList26").is(":visible")){
+			$("#hiddenList26").slideUp();
+		}else{
+			$("#hiddenList26").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn41").click(function(){
+		if($("#hiddenList41").is(":visible")){
+			$("#hiddenList41").slideUp();
+		}else{
+			$("#hiddenList41").slideDown();
+		}
+	});
+});
+
+/*그 외 건물*/
+$(document).ready(function(){
+	$("#spreadBtn27").click(function(){
+		if($("#hiddenList27").is(":visible")){
+			$("#hiddenList27").slideUp();
+		}else{
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList27").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn28").click(function(){
+		if($("#hiddenList28").is(":visible")){
+			$("#hiddenList28").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList28").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn29").click(function(){
+		if($("#hiddenList29").is(":visible")){
+			$("#hiddenList29").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList29").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn30").click(function(){
+		if($("#hiddenList30").is(":visible")){
+			$("#hiddenList30").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList30").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn31").click(function(){
+		if($("#hiddenList31").is(":visible")){
+			$("#hiddenList31").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList31").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn32").click(function(){
+		if($("#hiddenList32").is(":visible")){
+			$("#hiddenList32").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList32").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn33").click(function(){
+		if($("#hiddenList33").is(":visible")){
+			$("#hiddenList33").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList33").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn34").click(function(){
+		if($("#hiddenList34").is(":visible")){
+			$("#hiddenList34").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList34").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn35").click(function(){
+		if($("#hiddenList35").is(":visible")){
+			$("#hiddenList35").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList35").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn36").click(function(){
+		if($("#hiddenList36").is(":visible")){
+			$("#hiddenList36").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList36").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn37").click(function(){
+		if($("#hiddenList37").is(":visible")){
+			$("#hiddenList37").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList37").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn38").click(function(){
+		if($("#hiddenList38").is(":visible")){
+			$("#hiddenList38").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList38").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn39").click(function(){
+		if($("#hiddenList39").is(":visible")){
+			$("#hiddenList39").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList40").slideUp();
+			$("#hiddenList39").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn40").click(function(){
+		if($("#hiddenList40").is(":visible")){
+			$("#hiddenList40").slideUp();
+		}else{
+			$("#hiddenList27").slideUp();
+			$("#hiddenList28").slideUp();
+			$("#hiddenList29").slideUp();
+			$("#hiddenList30").slideUp();
+			$("#hiddenList31").slideUp();
+			$("#hiddenList32").slideUp();
+			$("#hiddenList33").slideUp();
+			$("#hiddenList34").slideUp();
+			$("#hiddenList35").slideUp();
+			$("#hiddenList36").slideUp();
+			$("#hiddenList37").slideUp();
+			$("#hiddenList38").slideUp();
+			$("#hiddenList39").slideUp();
+			$("#hiddenList40").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn41").click(function(){
+		if($("#hiddenList41").is(":visible")){
+			$("#hiddenList41").slideUp();
+		}else{
+			$("#hiddenList41").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn42").click(function(){
+		if($("#hiddenList42").is(":visible")){
+			$("#hiddenList42").slideUp();
+		}else{
+			$("#hiddenList42").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn43").click(function(){
+		if($("#hiddenList43").is(":visible")){
+			$("#hiddenList43").slideUp();
+		}else{
+			$("#hiddenList43").slideDown();
+		}
+	});
+});

@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+		<header>
+			<h1>경기대학교 신·편입생 길라잡이에 오신걸 환영합니다.</h1>
+			<p>입학 후 궁금했던 점을 해결하세요!</p>
+		</header>
+
+		<div>
+			<h2 style="margin-bottom:-70px;">자주 찾는 카테고리</h2>
+			<section class="tiles">
+				<article class="style1" style="width: 500px; height: 500px;">
+					<span class="image">
+						<img src="{% static 'images/KGU1.JPG' %}" alt="" />
+					</span>
+					<a href="/facility">
+						<h2>교내 주요 시설</h2>
+						<div class="content">
+							<p>교내에는 어떤 주요 시설들이 있는지 궁금할 때 유용해요.</p>
+						</div>
+					</a>
+				</article>
+				<article class="style1" style="width: 500px; height: 500px;">
+					<span class="image">
+						<img src="{% static 'images/cafe.JPG' %}" alt="" />
+					</span>
+					<a href="/outside">
+						<h2>학교 주변 맛집</h2>
+						<div class="content">
+							<p>학교 주변에는 어떤 맛집들이 있는지 궁금할 때 유용해요.</p>
+						</div>
+					</a>
+				</article>
+				<article class="style1" style="width: 500px; height: 500px;">
+					<span class="image">
+						<img src="{% static 'images/club_image.png' %}" alt="" />
+					</span>
+					<a href="/club">
+						<h2>동아리</h2>
+						<div class="content">
+							<p>학교에 어떤 동아리가 있는지 궁금할 때 유용해요.</p>
+						</div>
+					</a>
+				</article>
+				<!--<article class="style1" style="width: 250px; height: 250px;">
+					<span class="image">
+						<img src="{% static 'images/scholarship.png' %}" alt="" />
+					</span>
+					<a href="/scholarship">
+						<h2>장학금</h2>
+						<div class="content">
+							<p>어떤 장학금을 받을 수 있는지 궁금할 때 유용해요.</p>
+						</div>
+					</a>
+				</article>-->
+				<article class="style1" style="width: 500px; height: 500px;">
+					<span class="image">
+						<img src="{% static 'images/graduation_cap.jpg' %}" alt="" />
+					</span>
+					<a href="/graduate">
+						<h2>졸업 요건</h2>
+						<div class="content">
+							<p>졸업요건에 대해서 궁금할 때 유용해요.</p>
+						</div>
+					</a>
+				</article>
+				<article class="style1" style="width: 1050px; height: 250px;">
+					<span class="image">
+						<img src="{% static 'images/varsity.png' %}" alt="" />
+					</span>
+					<a href="/major">
+						<h2>학과 정보</h2>
+						<div class="content">
+							<p>각 학과에 대해서 궁금할 때 유용해요.</p>
+						</div>
+					</a>
+				</article>
+				<!--<article class="style1" style="width: 250px; height: 250px;">
+					<span class="image">
+						<img src="{% static 'images/club_image.png' %}" alt="" />
+					</span>
+					<a href="/post">
+						<h2>게시판</h2>
+						<div class="content">
+							<p>안녕하세요 게시판입니다!</p>
+						</div>
+					</a>
+				</article>-->
+			</section>
+		</div>
+		<section class="tiles">
+			{% for p in post %}
+			<article class="style1" style="width: 250px; height: 250px;">
+				<span class="image">
+					<img src="/media/{{ p.image }}" alt="" />
+				</span>
+				<a href="/post/{{ p.id }}">
+					<h2 style="font-size: 17px;">{{ p.title }}</h2>
+					<div class="content">
+						<p>{{ p.description }}</p>
+					</div>
+				</a>
+			</article>
+			{% endfor %}
+		</section>
+	</div>
+</div>
+{% endblock %}

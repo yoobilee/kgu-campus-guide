@@ -1,0 +1,265 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+     <div class="row" style="margin-top:-70px">
+      <div class="col-10">
+        <h1>편의시설 및 FAQ</h1>
+      </div>
+    </div>
+    <p>교내 편의시설 위치 및 FAQ🏪</p>
+    <hr>
+    <button id="spreadBtn24" class="restaurant">
+      <h2><img src="{% static 'images/QandA.png' %}" style="width:20px;height:20px;">&nbsp도서관에 대해 궁금해요!</h2>
+    </button>
+    <ul id="hiddenList24" class="example01" style="display: none;">
+      <br>
+      <li>
+        <button id="spreadBtn24-1" class="restaurant">
+          <h2>도서관은 어디에 있나요?</h2>
+        </button>
+         <ul id="hiddenList24-1" class="example01" style="display: none;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.757014524591!2d127.03329077558224!3d37.300892272108655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5d9c6b263c81%3A0xbb367bc410b212ea!2z6rK96riw64yA7ZWZ6rWQIOykkeyVmeuPhOyEnOq0gA!5e0!3m2!1sko!2skr!4v1684414927221!5m2!1sko!2skr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </li>
+      </ul>
+      <li>
+        <button id="spreadBtn24-2" class="restaurant">
+          <h2>도서관 층별 구조는 어떻게 되어있나요?</h2>
+        </button>
+        <ul id="hiddenList24-2" class="example01" style="display: none;">
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 2000 //기본 5초
+    })
+  </script>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+      <!-- 슬라이드 쇼 -->
+      <div class="carousel-item active">
+        <!--가로-->
+        <img class="d-block w-100" 
+          src="{% static 'images/library1-1.jpg' %}"
+          alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>TEST</h5>
+              <p>testtesttest</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library1-2.jpg' %}"
+          alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library1-3.jpg' %}"
+          alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library1-4.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library1-5.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library1-6.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library2-1.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library2-2.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library2-3.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library2-4.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library2-5.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library2-6.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library2-7.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library3-1.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library3-2.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library3-3.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library3-4.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library3-5.jpg' %}"
+          alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="{% static 'images/library3-6.jpg' %}"
+          alt="Fourth slide">
+      </div>
+    
+    <!-- / 슬라이드 쇼 끝 -->
+
+    <!-- 왼쪽 오른쪽 화살표 버튼 -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <!-- <span>Previous</span> -->
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <!-- <span>Next</span> -->
+    </a>
+    <!-- / 화살표 버튼 끝 -->
+    
+    <!-- 인디케이터 -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li> <!--0번부터시작-->
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+      <li data-target="#demo" data-slide-to="5"></li>
+      <li data-target="#demo" data-slide-to="6"></li>
+      <li data-target="#demo" data-slide-to="7"></li>
+      <li data-target="#demo" data-slide-to="8"></li>
+      <li data-target="#demo" data-slide-to="9"></li>
+      <li data-target="#demo" data-slide-to="10"></li>
+      <li data-target="#demo" data-slide-to="11"></li>
+      <li data-target="#demo" data-slide-to="12"></li>
+      <li data-target="#demo" data-slide-to="13"></li>
+      <li data-target="#demo" data-slide-to="14"></li>
+      <li data-target="#demo" data-slide-to="15"></li>
+      <li data-target="#demo" data-slide-to="16"></li>
+      <li data-target="#demo" data-slide-to="17"></li>
+      <li data-target="#demo" data-slide-to="18"></li>
+    </ul>
+    <!-- 인디케이터 끝 -->
+  </div>
+
+            <p>1층: 창의토론실, 창의팩토리, 프린트실<br>2층: 참고·정기간행물실<br>3층: 제1열람실, 제2열람실, 대출실 / 사회과학열람실<br>4층: 제3열람실, 인문과학열람실<br>5층: 예체능·자연과학열람실</p>
+        </ul>
+      </li>
+      <li>
+        <button id="spreadBtn24-3" class="restaurant">
+          <h2>책 대출과 반납에 대해 궁금해요.</h2>
+        </button>
+        <ul id="hiddenList24-3" class="example01" style="display: none;">
+          <h5>재학생 대출 책수 및 기간</h5>
+            <p>최대 10권까지 대출이 가능하며 대출기간을 최대 15일이에요.</p>
+          <h5>대출 연장</h5>
+            <p>- 도서관 홈페이지에서 로그인 후 My Library > Lib Info > 대출/예약조회에서 직접 연장<br>
+               - 대출한 자료는 1책당 1회에 한하여 연장 가능<br>
+               - 대출 연장 신청은 대출일 다음날부터 반납 예정일 당일까지 가능하며, 연장 신청일로부터 신분별 대출 기간만큼 연장됨<br>&nbsp(반납예정일 당일에 연장 신청 권장) ex. 학부생(대출기간 15일) 9월 1일 대출 도서 9월 5일 연장 신청 → 반납일 9월 20일<br>
+               - 반납예정일이 주말 또는 공휴일인 경우 익일로 자동 변경<br>
+               - 대출 연장이 불가능한 경우</p>
+               <p style="font-size: 15px">&nbsp&nbsp1. 이미 1회 대출 연장을 한 경우<br>
+                &nbsp&nbsp2. 대출중인 자료를 다른 이용자가 예약한 경우<br>
+                &nbsp&nbsp3. 대출 불가 신분이거나 대출 중지 기간인 경우</p>
+        </ul>
+      </li>
+    </ul>
+    <br>
+      <button id="spreadBtn25" class="restaurant">
+        <h2><img src="{% static 'images/QandA.png' %}" style="width:20px;height:20px;">&nbsp가까운 편의점은 어디있나요?</h2>
+      </button>
+      <ul id="hiddenList25" class="example01" style="display: none;">
+        <br>
+        <img src="{% static 'images/convenience.jpg' %}" style="width: 650px">
+      <p><img src="{% static 'images/7eleven.png' %}" style="width:20px;height:20px;"/>&nbsp세븐일레븐 - 미래관 1층, 경기드림타워(기숙사) 1층</p>
+      <p><img src="{% static 'images/Emart24.png' %}" style="width:20px;height:20px;"/>&nbsp이마트 24 - 이스퀘어 1층</p>
+      <p><img src="{% static 'images/CU.png' %}" style="width:20px;height:20px;"/>&nbspCU - 복지관 1층</p>
+      </ul>
+      <br>
+      <button id="spreadBtn26" class="restaurant">
+        <h2><img src="{% static 'images/QandA.png' %}" style="width:20px;height:20px;">&nbsp서점은 어디에 있나요?</h2>
+      </button>
+      <ul id="hiddenList26" class="example01" style="display: none;">
+        <br>
+      <p>이스퀘어 2층에 교내서점이 있어요.</p>
+      </ul>
+      <br>
+      <button id="spreadBtn41" class="restaurant">
+        <h2><img src="{% static 'images/QandA.png' %}" style="width:20px;height:20px;">&nbspATM기는 어디에 있나요?</h2>
+      </button>
+      <ul id="hiddenList41" class="example01" style="display: none;">
+        <br>
+        <img src="{% static 'images/ATM.jpg' %}" style="width: 650px">
+      <li>복지관</li>
+      <li>종합강의동(ATM)</li>
+      <li>9강의동(호연관)(ATM)</li>
+      <li>미래관(ATM)</li>
+      <li>4강의동(예지관)(ATM)</li>
+      <li>7강의동(집현관)(ATM)</li>
+      <li>경기드림타워(기숙사)(ATM)</li><br>
+      <p style="font-size: 15px; font-weight: bold">&nbsp&nbsp*모두 신한은행</p>
+      </ul>
+      <br>
+      <button id="spreadBtn42" class="restaurant">
+        <h2><img src="{% static 'images/QandA.png' %}" style="width:20px;height:20px;">&nbsp교내 와이파이 비밀번호는 뭔가요?</h2>
+      </button>
+      <ul id="hiddenList42" class="example01" style="display: none;">
+        <br>
+      <p>ID: kgu_o / PW: kgu@jump0<br>ID: kgu_a / PW: kgu@jump1<br>ID: kgu_p / PW: kgu@jump2<br>ID: kgu_s / PW: kgu@jump3</p>
+      </ul>
+      <br>
+      <button id="spreadBtn43" class="restaurant">
+        <h2><img src="{% static 'images/QandA.png' %}" style="width:20px;height:20px;">&nbsp강의실 번호의 의미가 뭔가요?</h2>
+      </button>
+      <ul id="hiddenList43" class="example01" style="display: none;">
+        <br>
+        <img src="{% static 'images/강의실찾기.jpg' %}" style="width: 650px">
+      </ul>
+    </div>
+  </div>
+{% endblock %}

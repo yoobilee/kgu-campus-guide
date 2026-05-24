@@ -1,0 +1,170 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+        <div class="row" style="margin-top:-70px">
+			<div class="col-10">
+				<h1>교내 식당</h1>
+			</div>
+		</div>
+		<p>클릭 시 위치와 설명을 볼 수 있어요!🍽️</p>
+    <hr>
+		<details>
+			<summary style="font-weight: bolder">식당을 찾는다면?(Click!)</summary>
+			<img src="{% static 'images/Restaurant.jpg' %}" style="width: 650px">
+	</details>
+	<br>
+		<div>
+			<section class="brand">
+        <div class="btn-restaurant">
+					<button id="spreadBtn07" class="restaurant">
+            <h2>제2학생식당</h2>
+          </button>
+          <ul id="hiddenList07" class="example01" style="display: none;">
+						<br>
+            <div>
+						<h2>위치🚩</h2>
+            <div style="float:left">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.8737487539763!2d127.03539203699452!3d37.301117797803656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5d3febdbe8e3%3A0xb2822e35eeacb2fd!2z6rK96riw64yA7ZWZ6rWQIOqwkOyEsey9lOyWtA!5e0!3m2!1sko!2skr!4v1684200651669!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+          <div>
+            <span style="font-weight: bold; font-style: italic;">&nbsp&nbsp WHERE?</span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp이스퀘어 옆, 4강의동 뒷건물 감성코어 1층</span><hr>
+						<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10:30 ~ 16:00(한식 11:00 ~ 14:30), 돈까스/라면 10:30 ~ 16:00</span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr>
+						<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 가격 </span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp한식 - 5500원 / 돈까스 - 4500원 / 라면 - 3500원</span>
+						<br><br>
+          </div>
+          </ul>
+				</div>
+					<br>
+					<div class="btn-restaurant">
+						<button id="spreadBtn08" class="restaurant">
+              <h2>기숙사식당</h2>
+						</button>
+						<ul id="hiddenList08" class="example01" style="display: none;">
+							<br>
+							<div>
+							<h2>위치🚩</h2>
+              <div style="float:left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1900.8615001436!2d127.03875776997172!3d37.298541926893634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5c9e4600bc4f%3A0x77197a147ac4763!2z6rK96riw64yA7ZWZ6rWQIOqyveq4sOuTnOumvO2DgOybjA!5e0!3m2!1sko!2skr!4v1684202512980!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp WHERE?</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp경기드림타워(기숙사) 1층</span><hr style="margin-bottom: 2%; margin-top: 2%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp중식 - 11:00 ~ 13:30 / 석식 - 17:00 ~ 19:00</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 2%; margin-top: 2%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 가격 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp중식, 석식 - 4500원 / 푸드코트(돈까스, 한식 뚝배기 등) - 7000원</span><hr style="margin-bottom: 2%; margin-top: 2%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 식단표</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp기숙사 홈페이지: <a href="https://dorm.kyonggi.ac.kr:446/Khostel/mall_main.php?viewform=B0001_foodboard_list&board_no=1" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></span>
+						</div>
+						</ul>
+					</div>
+					<br>
+					<div class="btn-restaurant">
+						<button id="spreadBtn09" class="restaurant">
+              <h2>이스퀘어식당</h2>
+						</button>
+						<ul id="hiddenList09" class="example01" style="display: none;">
+							<br>
+							<h2>위치🚩</h2>
+              <div style="float:left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1541.7060905039007!2d127.0365137732137!3d37.300751215359035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5d6f8f35e019%3A0x3217fc6b10418d59!2z6rK96riw64yA7ZWZ6rWQIOydtOyKpO2AmOyWtA!5e0!3m2!1sko!2skr!4v1685865783503!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp WHERE?</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp이스퀘어 1층</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp07:30 ~ 20:30(주문 마감 19:30)</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 가격</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3500원 ~ 8000원</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 메뉴</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp돈까스, 라면, 냉면, 김밥 등</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *천원의 아침밥 진행 중: 08:00시부터 소진 시까지 김밥 1000원에 판매</span>
+						</div>
+						</ul>
+					</div>
+					<br>
+					<div class="btn-restaurant">
+						<button id="spreadBtn10" class="restaurant">
+              <h2>오아시스</h2>
+						</button>
+						<ul id="hiddenList10" class="example01" style="display: none;">
+							<br>
+							<h2>위치🚩</h2>
+              <div style="float:left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865.2294089173427!2d127.0336641381885!3d37.302827826052116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5c9b93318f61%3A0x829c25ae7b9c8525!2z6rK96riw64yA7ZWZ6rWQIO2ZjeuztOq0gA!5e0!3m2!1sko!2skr!4v1684231009064!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp WHERE?</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp오아시스(홍보관)(9강의동(호연관) 가기 전 계단 위에 있는 건물)</span><hr style="margin-bottom: 2%; margin-top: 2%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10:00 ~ 21:00</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 2%; margin-top: 2%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 가격 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp식당별 상이</span><hr style="margin-bottom: 2%; margin-top: 2%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영식당</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp스탠딩스테이크(스테이크, 돈까스), 장미식탁(한식), 호심당(베트남, 타이음식), 밀플랜비(브리또)</span>
+						</div>
+						</ul>
+					</div>
+					<br>
+					<div class="btn-restaurant">
+						<button id="spreadBtn11" class="restaurant">
+              <h2>플랜비</h2>
+						</button>
+						<ul id="hiddenList11" class="example01" style="display: none;">
+							<br>
+							<h2>위치🚩</h2>
+              <div style="float:left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.8557232194091!2d127.03532433869418!3d37.30197209302711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5d34c6ed7a4d%3A0xcaed89d0e03b1381!2z6rK96riw64yA7ZWZ6rWQIOq1kOyImOyXsOq1rOuPmQ!5e0!3m2!1sko!2skr!4v1684289341500!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp WHERE?</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp교수연구동 5층</span><hr>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp07:30 ~ 20:30(주문 마감 19:30)</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 메뉴 및 가격</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp메뉴: <a href="/planBMenu" target="_blank"><img src="{% static 'images/link.png' %}" style="width:20px;height:20px;"></a></span>
+							<br><br>
+						</div>
+						</ul>
+					</div>
+					<br>
+					<div class="btn-restaurant">
+						<button id="spreadBtn12" class="restaurant">
+              <h2>경슐랭</h2>
+						</button>
+						<ul id="hiddenList12" class="example01" style="display: none;">
+							<br>
+							<h2>위치🚩</h2>
+              <div style="float:left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.8314049334676!2d127.03517367123602!3d37.30312459798597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5c9cf2ca1a71%3A0xc11295bdbdc6b4e9!2z6rK96riw64yA7ZWZ6rWQIOuzteyngOq0gA!5e0!3m2!1sko!2skr!4v1684231227837!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp WHERE?</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp복지관 B1층(신학생회관 4층 통로이용 가능)</span><hr style="margin-bottom: 2%; margin-top: 2%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10:30 ~ 19:00(주문 마감 18:30)</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 2%; margin-top: 2%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 가격 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp식당별 상이</span><hr style="margin-bottom: 2%; margin-top: 2%;">
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영식당</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp한식(덮밥, 국밥), 돈까스, 햄버거</span>
+						</div>
+						</ul>
+					</div>
+				</section>
+				<!--</article>-->
+		</div>
+	</div>
+</div>
+{% endblock %}

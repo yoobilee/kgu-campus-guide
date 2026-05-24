@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head> 
+		<title>신·편입생 길라잡이 | by 오난천</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}?after" />
+		<link rel="shortcut icon" type="image/x-icon" href="{% static '/images/kiryong_icon.png' %}?after" />
+		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
+
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="/static/assets/js/sub.js"></script>
+<!--<script>
+
+$(document).ready(function(){
+	$("#spreadBtn01").click(function(){
+		if($("#hiddenList01").is(":visible")){
+			$("#hiddenList01").slideUp();
+		}else{
+			$("#hiddenList01").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn02").click(function(){
+		if($("#hiddenList02").is(":visible")){
+			$("#hiddenList02").slideUp();
+		}else{
+			$("#hiddenList02").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn03").click(function(){
+		if($("#hiddenList03").is(":visible")){
+			$("#hiddenList03").slideUp();
+		}else{
+			$("#hiddenList03").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn04").click(function(){
+		if($("#hiddenList04").is(":visible")){
+			$("#hiddenList04").slideUp();
+		}else{
+			$("#hiddenList04").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn05").click(function(){
+		if($("#hiddenList05").is(":visible")){
+			$("#hiddenList05").slideUp();
+		}else{
+			$("#hiddenList05").slideDown();
+		}
+	});
+});
+
+$(document).ready(function(){
+	$("#spreadBtn06").click(function(){
+		if($("#hiddenList06").is(":visible")){
+			$("#hiddenList06").slideUp();
+		}else{
+			$("#hiddenList06").slideDown();
+		}
+	});
+});
+</script>-->
+
+<!--<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#spreadBtn02").click(function(){
+		if($("#hiddenList02").is(":visible")){
+			$("#hiddenList02").slideUp();
+		}else{
+			$("#hiddenList02").slideDown();
+		}
+	});
+});
+</script>-->
+
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header" style="padding-bottom:100px;">
+						<div class="inner">
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-3">
+                                    <!-- Logo -->
+                                    <a href="/" class="logo">
+                                        <span class="symbol"><img src="{% static 'media/giryong2.png' %}" alt="" /></span><span class="title" style="font-size:16px">신·편입생 길라잡이</span>
+                                    </a>
+                                  </div>
+                                  <div class="col-7">
+                                    
+                                  </div>
+                                </div>
+                            </div>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>More Info</h2>
+					<ul>
+						<div class="test"><li><span><a href="https://www.instagram.com/kyonggi_univ/" target="_blank" style="color: white"><img src="{% static 'images/instagram_logo.png' %}" style="width:20px;height:20px;">&nbsp;경기대학교 인스타그램</a></span>
+							<span><a href="https://www.instagram.com/kyonggi_univ/" target="_blank"></a></span></li></div>
+						<div><li><span><a href="https://www.instagram.com/kgu_bada/" target="_blank" style="color: white"><img src="{% static 'images/bada.png' %}" style="width:20px;height:20px;">&nbsp;경기대학교 바다 총학생회</a></span>
+							<span><a href="https://www.instagram.com/kgu_bada/" target="_blank"></a></span></li></div>
+						<div><li><span><a href="https://www2.kyonggi.ac.kr/www/index.do" target="_blank" style="color: white"><img src="{% static 'images/kiryong2.png' %}" style="width:20px;height:20px;">&nbsp;경기대학교 홈페이지</a></span>
+							<span><a href="https://www2.kyonggi.ac.kr/www/index.do" target="_blank"></a></span></li></div>
+						<div><li><span><a href="https://library.kyonggi.ac.kr/" target="_blank" style="color: white"><img src="{% static 'images/kgu.png' %}" style="width:20px;height:20px;">&nbsp;경기대학교 도서관</a></span>
+							<span><a href="https://library.kyonggi.ac.kr/" target="_blank"></a></span></li></div>
+						<div><li><span><a href="https://www2.kyonggi.ac.kr/common/vr/suwon/tour.html" target="_blank" style="color: white"><img src="{% static 'images/Map.png' %}" style="width:20px;height:20px;">&nbsp;경기대학교 VR투어</a></span>
+							<span><a href="https://www2.kyonggi.ac.kr/common/vr/suwon/tour.html" target="_blank"></a></span></li></div>
+							<hr>
+							<h3>전자출결 App</h3>
+						<div><li><span><a href="https://play.google.com/store/apps/details?id=com.kyonggi.kg_abookn&hl=ko&gl=US&pli=1" target="_blank" style="color: white"><img src="{% static 'images/Android_Robot.png' %}" style="width:20px;height:20px;">&nbsp;안드로이드 버전</a></span>
+							<span><a href="https://play.google.com/store/apps/details?id=com.kyonggi.kg_abookn&hl=ko&gl=US&pli=1"></a></span></li></div>
+						<div><li><span><a href="https://apps.apple.com/kr/app/%EA%B2%BD%EA%B8%B0%EB%8C%80%ED%95%99%EA%B5%90-%EC%A0%84%EC%9E%90%EC%B6%9C%EA%B2%B0/id6446079285" target="_blank" style="color: white"><img src="{% static 'images/apple.png' %}" style="width:20px;height:20px;">&nbsp;아이폰 버전</a></span>
+							<span><a href="https://apps.apple.com/kr/app/%EA%B2%BD%EA%B8%B0%EB%8C%80%ED%95%99%EA%B5%90-%EC%A0%84%EC%9E%90%EC%B6%9C%EA%B2%B0/id6446079285"></a></span></li></div>
+							<hr>
+							<h3>길라잡이 App</h3>
+							<div><li><span><a href="#" target="_blank" style="color: white"><img src="{% static 'images/unknown.png' %}" style="width:20px;height:20px;">&nbsp;경기대학교 길라잡이</a></span>
+								<span><a href="#"></a></span></li></div>
+							</ul>
+						</nav>
+                {% block content %}
+				
+                {% endblock %}
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; 경기대학교 컴퓨터공학부 캡스톤디자인</li><li>Team 오난천</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>

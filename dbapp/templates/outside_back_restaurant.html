@@ -1,0 +1,568 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+		<div class="row" style="margin-top:-70px">
+			<div class="col-10">
+				<h1>후문 맛집</h1>
+			</div>
+		<div>
+            <p>경기대학교 후문에 있는 식당 정보입니다.</p>
+        </div>
+		</div>
+    <hr>
+    <div>
+      <details>
+        <summary style="font-weight: bolder; background-color:#0059AB; color: white; text-align: center; border-radius: 40px 80px;" class="details_summary">한식</summary>
+        <table class="table_FrontRestaurant">
+          <tbody class="tbody_FrontRestaurant">
+          <tr style="background-color: rgba(144, 144, 144, 0.075);">
+            <th style="text-align: center; border-right: solid 1px #c9c9c9;">이름</th>
+            <th style="text-align: center; border-right: solid 1px #c9c9c9;">대표메뉴</th>
+            <th style="text-align: center; border-right: solid 1px #c9c9c9;">리뷰 및 평점</th>
+            <th style="text-align: center;">비고</th>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">조선부뚜막</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">삼겹살</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%A1%B0%EC%84%A0%EB%B6%80%EB%9A%9C%EB%A7%89/place/1483250944?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1271313200" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">배부장찌개</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">김치찌개</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%B0%B0%EB%B6%80%EC%9E%A5%EC%B0%8C%EA%B0%9C%EA%B0%80/place/38332070?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1343425942" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">오늘392</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">김치찌개</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%98%A4%EB%8A%98%20392/place/1874322026?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/489786870" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">콩나물불고기 전문점</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">콩나물불고기</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%BD%A9%EB%82%98%EB%AC%BC%EB%B6%88%EA%B3%A0%EA%B8%B0/place/1701887352?c=15.16,0,0,0,dh&placePath=%3Fentry=bmp" target="_blank">네이버지도</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">등촌샤브칼국수</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">샤브칼국수</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%93%B1%EC%B4%8C%EC%83%A4%EB%B8%8C%EC%B9%BC%EA%B5%AD%EC%88%98/place/1652407876?c=15.16,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/271548019" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">서울감자탕해장국</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">감자탕</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EA%B0%90%EC%9E%90%ED%83%95%ED%95%B4%EC%9E%A5%EA%B5%AD/place/1386876378?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1503947250" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">옛날전집</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">모둠전</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%98%9B%EB%82%A0%EC%A0%84%EC%A7%91/place/1126850045?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/603058125" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">석기정</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">부대찌개</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%84%9D%EA%B8%B0%EC%A0%95/place/599225726?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/209763965" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">늘이맛콩나물국밥국수</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">콩나물국밥</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1027924497?c=15,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/328019610" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">이한부대찌개닭개장</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">부대찌개</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1285146131?c=12,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1744466196" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">신기칡냉면&샤브칼국수</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">냉면</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1364879903?c=12,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/564858450" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">광교연탄불고기</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">연탄불고기</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/38502471?c=12,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1404607284" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">광교면옥</td>
+              <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">회냉면</td>
+              <td style="border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EA%B4%91%EA%B5%90%EB%A9%B4%EC%98%A5/place/152101764?c=12,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1496939292" target="_blank">카카오맵</a></td>
+              <td></td>
+          </tr>
+        </tbody>
+        </table>
+    </details>
+    <details>
+      <summary style="font-weight: bolder; background-color:#FFA500; color: white; text-align: center; border-radius: 40px 80px;" class="details_summary">양식</summary>
+      <table class="table_FrontRestaurant">
+        <tbody class="tbody_FrontRestaurant">
+        <tr style="background-color: rgba(144, 144, 144, 0.075);">
+          <th style="text-align: center; border-right: solid 1px #c9c9c9;">이름</th>
+          <th style="text-align: center; border-right: solid 1px #c9c9c9;">대표메뉴</th>
+          <th style="text-align: center; border-right: solid 1px #c9c9c9;">리뷰 및 평점</th>
+          <th style="text-align: center;">비고</th>
+        </tr>
+        <tr>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">버거그라운드</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">수제버거</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%B2%84%EA%B1%B0%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C/place/1811779933?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/598180247" target="_blank">카카오맵</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">마리나그란데</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">파스타</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%A7%88%EB%A6%AC%EB%82%98%EA%B7%B8%EB%9E%80%EB%8D%B0/place/84373897?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1325822132" target="_blank">카카오맵</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">맘스터치</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">햄버거</td>
+            <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%A7%98%EC%8A%A4%ED%84%B0%EC%B9%98/place/1262209700?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1245891331" target="_blank">카카오맵</a></td>
+            <td></td>
+        </tr>
+      </tbody>
+      </table>
+  </details>
+  <details>
+    <summary style="font-weight: bolder; background-color:#00AA5C; color: white; text-align: center; border-radius: 40px 80px;" class="details_summary">일식</summary>
+    <table class="table_FrontRestaurant">
+      <tbody class="tbody_FrontRestaurant">
+      <tr style="background-color: rgba(144, 144, 144, 0.075);">
+        <th style="text-align: center; border-right: solid 1px #c9c9c9;">이름</th>
+        <th style="text-align: center; border-right: solid 1px #c9c9c9;">대표메뉴</th>
+        <th style="text-align: center; border-right: solid 1px #c9c9c9;">리뷰 및 평점</th>
+        <th style="text-align: center;">비고</th>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">겐코</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">덮밥</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EA%B2%90%EC%BD%94/place/1584732999?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/706199546" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">동경당</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돈까스</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%8F%99%EA%B2%BD%EB%8B%B9/place/1983411199?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1851970155" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">역전우동0410</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">우동</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://place.map.kakao.com/1851970155" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/294085050" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">브라운돈까스</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돈까스</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%B8%8C%EB%9D%BC%EC%9A%B4%EB%8F%88%EA%B9%8C%EC%8A%A4/place/1242141402?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/463906678" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">황금입은 동까스</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돈까스</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/36984899?c=15,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/27299970" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">야마도리</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">덮밥</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%95%BC%EB%A7%88%EB%8F%84%EB%A6%AC/place/1039367143?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/584866920" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+    </tbody>
+    </table>
+</details>
+  <details>
+    <summary style="font-weight: bolder; background-color:#0059AB; color: white; text-align: center; border-radius: 40px 80px;" class="details_summary">중식</summary>
+    <table class="table_FrontRestaurant">
+      <tbody class="tbody_FrontRestaurant">
+      <tr style="background-color: rgba(144, 144, 144, 0.075);">
+        <th style="text-align: center; border-right: solid 1px #c9c9c9;">이름</th>
+        <th style="text-align: center; border-right: solid 1px #c9c9c9;">대표메뉴</th>
+        <th style="text-align: center; border-right: solid 1px #c9c9c9;">리뷰 및 평점</th>
+        <th style="text-align: center;">비고</th>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">교동반점</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"></td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EA%B5%90%ED%86%B5%EB%B0%98%EC%A0%90/place/38643362?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/844661047" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">태양부 양꼬치</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">양꼬치</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%ED%83%9C%EC%96%91%EB%B6%80%20%EC%96%91%EA%BC%AC%EC%B9%98/place/1588452505?c=13,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/358476112" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">자미향양꼬치</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">양꼬치</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1338023419?c=13,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/2013210625" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">호중천</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">볶음밥</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%ED%98%B8%EC%A4%91%EC%B2%9C/place/1395283360?c=13,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1613901510" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">수련반점</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"></td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1076284184?c=13,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/24262424" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">램플러스</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">양꼬치</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%9E%A8%ED%94%8C%EB%9F%AC%EC%8A%A4/place/86115527?c=13,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/406858946" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">불라라 마라탕</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">마라탕</td>
+          <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%B6%88%EB%9D%BC%EB%9D%BC%EB%A7%88%EB%9D%BC%ED%83%95/place/1240924521?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1958916127" target="_blank">카카오맵</a></td>
+          <td></td>
+      </tr>
+    </tbody>
+    </table>
+</details>
+<details>
+  <summary style="font-weight: bolder; background-color:#FFA500; color: white; text-align: center; border-radius: 40px 80px;" class="details_summary">분식</summary>
+  <table class="table_FrontRestaurant">
+    <tbody class="tbody_FrontRestaurant">
+    <tr style="background-color: rgba(144, 144, 144, 0.075);">
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">이름</th>
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">대표메뉴</th>
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">리뷰 및 평점</th>
+      <th style="text-align: center;">비고</th>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">신전떡볶이</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">떡볶이</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%8B%A0%EC%A0%84%EB%96%A1%EB%B3%B6%EC%9D%B4/place/1960382018?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1937584204" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">동대문엽기떡볶이</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">떡볶이</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1359561800?c=15,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/238906115" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">좋은 인연 식당</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">김밥</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1811283801?c=15,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/2130838179" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+  </tbody>
+  </table>
+</details>
+<details>
+  <summary style="font-weight: bolder; background-color:#00AA5C; color: white; text-align: center; border-radius: 40px 80px;" class="details_summary">호프 & 요리주점</summary>
+  <table class="table_FrontRestaurant">
+    <tbody class="tbody_FrontRestaurant">
+    <tr style="background-color: rgba(144, 144, 144, 0.075);">
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">이름</th>
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">대표메뉴</th>
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">리뷰 및 평점</th>
+      <th style="text-align: center;">비고</th>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">카타르시스</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">수육튀김</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%B9%B4%ED%83%80%EB%A5%B4%EC%8B%9C%EC%8A%A4/place/1681812573?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/27539673" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">더 부엌 1호점</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">떡볶이 & 탕수육</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%8D%94%20%EB%B6%80%EC%97%8C/place/37484670?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/27410715" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">더 부엌 1.5</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">떡볶이 & 탕수육</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%8D%94%20%EB%B6%80%EC%97%8C/place/1068437147?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1288223570" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">술도둑</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">전</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%88%A0%EB%8F%84%EB%91%91/place/38338084?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/894800034" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">비어웍스</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">치킨 & 먹태</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%B9%84%EC%96%B4%EC%9B%8D%EC%8A%A4/place/1360396678?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1978895475" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">역전할머니맥주</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"></td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1803674816?c=15,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1910951946" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">사쿠라</td>
+      <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">나가사끼 짬뽕</td>
+      <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%82%AC%EC%BF%A0%EB%9D%BC/place/1213516272?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/867480104" target="_blank">카카오맵</a></td>
+      <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">모꼬지</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">연어광어모듬</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%AA%A8%EA%BC%AC%EC%A7%80/place/1711597715?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1063201363" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">오라카이</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">오징어순대</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%98%A4%EB%9D%BC%EC%B9%B4%EC%9D%B4/place/1223313766?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/14173884" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">포차천국</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">곱도리탕</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%ED%8F%AC%EC%B0%A8%EC%B2%9C%EA%B5%AD/place/979360575?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/618052402" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">하루카</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">모듬 꼬치</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1166916734?c=15,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/312508374" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">고도리비스트로</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">닭볶음탕</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EA%B3%A0%EB%8F%84%EB%A6%AC%EB%B9%84%EC%8A%A4%ED%8A%B8%EB%A1%9C/place/1396161315?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/713570895" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">어뮤즈</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">칵테일</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%96%B4%EB%AE%A4%EC%A6%88/place/35873138?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/27302603" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">BHC</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">치킨</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/bhc%20%EA%B4%91%EA%B5%90/place/33606050?c=12,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/21136337" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">쓰리치어스</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">생맥주</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%93%B0%EB%A6%AC%EC%B9%98%EC%96%B4%EC%8A%A4/place/1201365380?c=12,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1008102511" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+  </tbody>
+  </table>
+</details>
+<details>
+  <summary style="font-weight: bolder; background-color:#0059AB; color: white; text-align: center; border-radius: 40px 80px;" class="details_summary">고깃집</summary>
+  <table class="table_FrontRestaurant">
+    <tbody class="tbody_FrontRestaurant">
+    <tr style="background-color: rgba(144, 144, 144, 0.075);">
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">이름</th>
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">대표메뉴</th>
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">리뷰 및 평점</th>
+      <th style="text-align: center;">비고</th>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">오리덕분</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">생오리 숯불구이</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%98%A4%EB%A6%AC%EB%8D%95%EB%B6%84/place/1002682326?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1627792595" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">상원회관</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%83%81%EC%9B%90%ED%9A%8C%EA%B4%80/place/1725971291?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/646465404" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">경동화로</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EA%B2%BD%EB%8F%99%ED%99%94%EB%A1%9C/place/1516001187?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1995966525" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소소곱창</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">곱창</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%86%8C%EC%86%8C%EA%B3%B1%EC%B0%BD/place/1744255477?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1735002267" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">착한고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%B0%A9%ED%95%9C%EA%B3%A0%EA%B8%B0/place/36523432?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/27007569" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">춘천에서 온 숯닭</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">닭갈비</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%B6%98%EC%B2%9C%EC%97%90%EC%84%9C%EC%98%A8%EC%88%AF%EB%8B%AD/place/37520421?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/27509258" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">조선부뚜막</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1483250944?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1958916127" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">오늘392</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돼지고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%98%A4%EB%8A%98392/place/1874322026?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/489786870" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">와블비프</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%99%80%EB%B8%94%EB%B9%84%ED%94%84/place/37213486?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/27211739" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">더먹소</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%8D%94%EB%A8%B9%EC%86%8C/place/1010610128?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/571020040" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">갈풍집</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EA%B0%88%ED%92%8D%EC%A7%91/place/37089394?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/27262204" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">뚱띠소곱창</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">곱창</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://place.map.kakao.com/27262204" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1452223853" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">유가네닭갈비</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">닭갈비</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%9C%A0%EA%B0%80%EB%84%A4%EB%8B%AD%EA%B0%88%EB%B9%84/place/37336834?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/27278683" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">완판도</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돼지고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%99%84%ED%8C%90%EB%8F%84/place/1076522298?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/341270007" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">훈돈가</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돼지고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%ED%9B%88%EB%8F%88%EA%B0%80/place/1731110200?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1529824865" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">마약곱창</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">곱창</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%A7%88%EC%95%BD%EA%B3%B1%EC%B0%BD/place/1790452795?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/46543778" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">역북집</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돼지고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%97%AD%EB%B6%81%EC%A7%91/place/1485773282?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/430127949" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">왕돌판생삼겹</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돼지고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%99%95%EB%8F%8C%ED%8C%90%EC%83%9D%EC%82%BC%EA%B2%B9/place/1981209747?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1776192293" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">진배기고깃간</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%A7%84%EB%B0%B0%EA%B8%B0%EA%B3%A0%EA%B9%83%EA%B0%84/place/1041835003?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/585028104" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">징기스칸램</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">양고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%A7%95%EA%B8%B0%EC%8A%A4%EC%B9%B8%EB%9E%A8/place/990813069?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/2016210500" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">배대감 갈비촌</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">소고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/37741689?c=15,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/155703577" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돈블랑</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">돼지고기</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%8F%88%EB%B8%94%EB%9E%91/place/1527762894?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1511516515" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+  </tbody>
+  </table>
+</details>
+<details>
+  <summary style="font-weight: bolder; background-color:#FFA500; color: white; text-align: center; border-radius: 40px 80px;" class="details_summary">기타 음식</summary>
+  <table class="table_FrontRestaurant">
+    <tbody class="tbody_FrontRestaurant">
+    <tr style="background-color: rgba(144, 144, 144, 0.075);">
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">이름</th>
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">대표메뉴</th>
+      <th style="text-align: center; border-right: solid 1px #c9c9c9;">리뷰 및 평점</th>
+      <th style="text-align: center;">비고</th>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">부리또정거장</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">부리또</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/entry/place/1720854328?c=15,0,0,0,dh" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/2114984191" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">방콕스토리</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">쌀국수</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%B0%A9%EC%BD%95%EC%8A%A4%ED%86%A0%EB%A6%AC/place/479542877?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1302749355" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">뜸들이다</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">컵밥</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EB%9C%B8%EB%93%A4%EC%9D%B4%EB%8B%A4%20%EC%9D%B4%EC%9D%98/place/1434308018?c=12,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/816935906" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">샐러디</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">샐러드</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%83%90%EB%9F%AC%EB%94%94/place/1184874272?c=12,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1827756710" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">조개창고</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;">조개구이</td>
+        <td style="vertical-align: middle; border-right: solid 1px #c9c9c9;"><a href="https://map.naver.com/v5/search/%EC%A1%B0%EA%B0%9C%EC%B0%BD%EA%B3%A0%20%EA%B4%91%EA%B5%90%EC%97%AD/place/1076051174?c=15,0,0,0,dh&isCorrectAnswer=true" target="_blank">네이버지도</a><br><a href="https://place.map.kakao.com/1397691023" target="_blank">카카오맵</a></td>
+        <td></td>
+    </tr>
+  </tbody>
+  </table>
+</details>
+    </div>
+	</div>
+</div>
+{% endblock %}

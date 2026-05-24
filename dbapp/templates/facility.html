@@ -1,0 +1,92 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+        <div class="row" style="margin-top:-70px">
+			<div class="col-10">
+				<h1>교내 주요 시설</h1>
+			</div>
+			<div class="col-1">
+                {% if user.is_authenticated %}
+				<a href="{% url 'facility_create' %}"><button class="btn btn-primary" style="height:40px; margin-left:-15px; display:flex; align-items:center;">시설 등록하기</button></a>
+                {% endif %}
+			</div>
+		</div>
+        <div>
+            <p>경기대학교 안에 위치하고 있는 주요 시설들에 관한 정보입니다.</p>
+        </div>
+		<span class="image main"><img src="{% static 'images/KGU3-1.jpg' %}" style="height:484px" alt="" /></span>
+		<div>
+			<h2 style="margin-bottom:-70px;">교내 주요 시설</h2><hr>
+			<section class="tiles">
+                <article class="style1" style="width: 250px; height: 100px;">
+					<span class="image">
+						<img src="{% static 'images/kgu-restaurant.jpg' %}" alt="" />
+					</span>
+					<a href="/facility_cafeteria">
+						<h2>학식</h2>
+					</a>
+				</article>
+                <article class="style1" style="width: 250px; height: 100px;">
+					<span class="image">
+						<img src="{% static 'images/cafePic.png' %}" alt="" />
+					</span>
+					<a href="/facility_beverage">
+						<h2>카페</h2>
+					</a>
+				</article>
+                <article class="style1" style="width: 250px; height: 100px;">
+					<span class="image">
+						<img src="{% static 'images/kgu-lecture.png' %}" alt="" />
+					</span>
+					<a href="/facility_lecture">
+						<h2>강의동</h2>
+					</a>
+				</article>
+				<article class="style1" style="width: 250px; height: 100px;">
+					<span class="image">
+						<img src="{% static 'images/kyonggiuniv.JPG' %}" alt="" />
+					</span>
+					<a href="/facility_etc">
+						<h2>그 외 건물</h2>
+					</a>
+				</article>
+				<article class="style1" style="width: 250px; height: 100px;">
+					<span class="image">
+						<img src="{% static 'images/kgu-conv.png' %}" alt="" />
+					</span>
+					<a href="/facility_facilities">
+						<h2>편의시설 및 FAQ</h2>
+					</a>
+				</article>
+                {% for facility in facilities %}
+                <a href="/facility">
+                    <h2>교내 시설</h2>
+                    <div class="content">
+                        <p>교내에는 어떤 시설들이 있는지 궁금할 때 유용해요.</p>
+                    </div>
+                </a>
+            </article>
+            <article class="style1" style="width: 250px; height: 250px;">
+                <span class="image">
+                    <img src="{% static 'images/cafe.JPG' %}" alt="" />
+                </span>
+                    <!--<article class="style1">
+                        <span class="image">
+                            <img src="/media/{{ facility.image }}" alt="" />
+                        </span>
+                        <a href="facility/{{ facility.id }}">
+                            <h2>{{ facility.name }}</h2>
+                            <div class="content">
+                                <p>{{ facility.category }}</p>
+                            </div>
+                        </a>
+                    </article>-->
+                {% endfor %}
+			</section>
+		</div>
+	</div>
+</div>
+{% endblock %}

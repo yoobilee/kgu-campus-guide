@@ -1,0 +1,422 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+        <div class="row" style="margin-top:-70px">
+			<div class="col-10">
+				<h1>학과 정보</h1>
+			</div>
+		</div>
+        <div>
+            <p>더 많은 정보를 얻고 싶다면 학과/학부 홈페이지를 참고하세요.</p>
+        </div>
+		<span class="image main"><img src="{% static 'images/multimajor_main.png' %}" alt="" /></span>
+		<div>
+			<h2 style="margin-bottom:-70px;">학과 목록</h2>
+            <hr>
+		</div>
+        <br>
+        <div>
+            <table class="table_major">
+                <thread class="thread_major">
+                    <tr>
+                        <th style="text-align: center;">학과</th>
+                        <th style="text-align: center;">홈페이지 주소</th>
+                    </tr>
+                </thread>
+                <thread>
+                    <td colspan="2" style="background-color: #0059AB; color: white">인문대학</td>
+                </thread>
+                <tbody class="tbody_major">
+                    <tr>
+                        <td>국어국문학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/gm/index.do" target="_blank">https://www2.kyonggi.ac.kr/gm/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>영어영문학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_english/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_english/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>사학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_history/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_history/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>문헌정보학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_library/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_library/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>문예창작학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/mc/index.do" target="_blank">https://www2.kyonggi.ac.kr/mc/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>문예창작학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_child/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_child/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">글로벌어문학부</td>
+                    </tr>
+                    <tr>
+                        <td>독어독문전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_german/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_german/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>프랑스어문전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_french/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_french/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>일어일문전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/JPLM/index.do" target="_blank">https://www2.kyonggi.ac.kr/JPLM/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>중어중문전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_chinese/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_chinese/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>러시아어문전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_russian/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_russian/index.do</a>
+                        </td>
+                    </tr>
+                    <thread>
+                        <td colspan="2" style="background-color: #FFA500; color: white">예술체육대학</td>
+                    </thread>
+                    <tr>
+                        <td>입체조형학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/3Dimensional_Art/index.do" target="_blank">https://www2.kyonggi.ac.kr/3Dimensional_Art/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>체육학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/pe/index.do" target="_blank">https://www2.kyonggi.ac.kr/pe/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>시큐리티매니지먼트학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/SM/index.do" target="_blank">https://www2.kyonggi.ac.kr/SM/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">디자인비즈학부</td>
+                    </tr>
+                    <tr>
+                        <td>시각정보디자인전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/VCD/index.do" target="_blank">https://www2.kyonggi.ac.kr/VCD/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>산업디자인전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/ID/index.do" target="_blank">https://www2.kyonggi.ac.kr/ID/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>장신구금속디자인전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/JMD/index.do" target="_blank">https://www2.kyonggi.ac.kr/JMD/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">Fine Arts학부</td>
+                    </tr>
+                    <tr>
+                        <td>한국화전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/KoreanPainting/index.do" target="_blank">https://www2.kyonggi.ac.kr/KoreanPainting/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>서양화전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_western/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_western/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>미술경영전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/am/index.do" target="_blank">https://www2.kyonggi.ac.kr/am/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>서예전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/calligraphy/index.do" target="_blank">https://www2.kyonggi.ac.kr/calligraphy/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">스포츠과학부</td>
+                    </tr>
+                    <tr>
+                        <td>스포츠건강과학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/sports_science/index.do" target="_blank">https://www2.kyonggi.ac.kr/sports_science/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>스포츠레저산업전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/SLI/index.do" target="_blank">https://www2.kyonggi.ac.kr/SLI/index.do</a>
+                        </td>
+                    </tr>
+                    <thread>
+                        <td colspan="2" style="background-color: #00AA5C; color: white">사회과학대학</td>
+                    </thread>
+                    <tr>
+                        <td>법학과</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/dol/index.do" target="_blank">https://www2.kyonggi.ac.kr/dol/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">공공안전학부</td>
+                    </tr>
+                    <tr>
+                        <td>범죄교정심리학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/miccp/index.do" target="_blank">https://www2.kyonggi.ac.kr/miccp/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>경찰행정학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/moci/index.do" target="_blank">https://www2.kyonggi.ac.kr/moci/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">휴먼서비스학부</td>
+                    </tr>
+                    <tr>
+                        <td>사회복지학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/misw/index.do" target="_blank">https://www2.kyonggi.ac.kr/misw/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>청소년학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/miys/index.do" target="_blank">https://www2.kyonggi.ac.kr/miys/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">공공인재학부</td>
+                    </tr>
+                    <tr>
+                        <td>행정학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_admin/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_admin/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>국제학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/psd/index.do" target="_blank">https://www2.kyonggi.ac.kr/psd/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">경제학부</td>
+                    </tr>
+                    <tr>
+                        <td>경제학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_economics/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_economics/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>무역학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_trade/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_trade/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>응용통계학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_tattistics/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_tattistics/index.do</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>지식재산학전공</td>
+                        <td style="background-color: white;">
+                            <a href="https://www2.kyonggi.ac.kr/u_property/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_property/index.do</a>
+                        </td>
+                    </tr>
+                <thread>
+                    <td colspan="2" style="background-color: #0059AB; color: white">소프트웨어경영대학</td>
+                </thread>
+                <tr>
+                    <td>산업경영정보공학과</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u-industrial/index.do" target="_blank">https://www2.kyonggi.ac.kr/u-industrial/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">경영학부</td>
+                </tr>
+                <tr>
+                    <td>경영학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_business/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_business/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>회계세무학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_accounting/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_accounting/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">AI컴퓨터공학부</td>
+                </tr>
+                <tr>
+                    <td>컴퓨터공학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_computer/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_computer/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>인공지능전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_ai/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_ai/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SW안전보안전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_security/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_security/index.do</a>
+                    </td>
+                </tr>
+                <thread>
+                    <td colspan="2" style="background-color: #FFA500; color: white">융합과학대학</td>
+                </thread>
+                <tr>
+                    <td>수학과</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_math/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_math/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>화학과</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_chemistry/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_chemistry/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">바이오융합학부</td>
+                </tr>
+                <tr>
+                    <td>생명과학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_life/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_life/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>식품생물공학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_foodbio/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_foodbio/index.do</a>
+                    </td>
+                </tr>
+                <thread>
+                    <td colspan="2" style="background-color: #00AA5C; color: white">창의공과대학</td>
+                </thread>
+                <tr>
+                    <td>건축학과</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_architecture/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_architecture/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>사회에너지시스템공학과</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/cee/index.do" target="_blank">https://www2.kyonggi.ac.kr/cee/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>건축안전공학과(계약학과)</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_consafty/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_consafty/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">전자공학부</td>
+                </tr>
+                <tr>
+                    <td>나노·반도체전공 / 정보통신시스템전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://ee.kgu.ac.kr/" target="_blank">https://ee.kgu.ac.kr/</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">융합에너지시스템공학부</td>
+                </tr>
+                <tr>
+                    <td>신소재공학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_materials/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_materials/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>화학공학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_chemeng/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_chemeng/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">스마트시티공학부</td>
+                </tr>
+                <tr>
+                    <td>건축공학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_archieng/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_archieng/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>도시·교통공학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_urban/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_urban/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-top: 2px solid; border-bottom: 2px solid;">기계시스템공학부</td>
+                </tr>
+                <tr>
+                    <td>기계공학전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_mechanical/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_mechanical/index.do</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>지능형로봇전공</td>
+                    <td style="background-color: white;">
+                        <a href="https://www2.kyonggi.ac.kr/u_robotics/index.do" target="_blank">https://www2.kyonggi.ac.kr/u_robotics/index.do</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+	</div>
+</div>
+{% endblock %}

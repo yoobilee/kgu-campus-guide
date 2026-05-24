@@ -1,0 +1,373 @@
+{% extends 'subbase.html' %}
+{% load static %}
+
+{% block content %}
+<div id="main">
+	<div class="inner">
+        <div class="row" style="margin-top:-70px">
+			<div class="col-10">
+				<h1>교내 카페</h1>
+			</div>
+		</div>
+		<p>클릭 시 위치와 설명을 볼 수 있어요!☕</p>
+    <hr>
+		<details>
+			<summary style="font-weight: bolder">카페가 있는 건물을 찾는다면?(Click!)</summary>
+			<img src="{% static 'images/Coffeeshop.jpg' %}" style="width: 650px">
+	</details>
+	<br>
+		<div>
+			<section class="brand">
+        <div class="btn-cafe">
+					<button id="spreadBtn01" class="cafe">
+						<img src="{% static 'images/cafe_ing.png' %}">
+					</button>
+          <ul id="hiddenList01" class="example01" style="display: none;">
+						<br>
+						<h2>위치🚩</h2>
+						<h3>2강의동(성신관) 1층</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.9046818252841!2d127.03244697462564!3d37.299651728801905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5c993a34c2b5%3A0x34294a85bab6fc5a!2z6rK96riw64yA7ZWZ6rWQIOyEseyLrOq0gA!5e0!3m2!1sko!2skr!4v1684154770311!5m2!1sko!2skr" width="1125" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp학기중: 평일 08:00 ~ 18:30 / 토요일 09:00 ~ 15:00</span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp방학중: 평일 09:00 ~ 17:00 / 토요일 09:00 ~ 15:00</span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+						<h3>복지관 B1층</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1138.3864087417178!2d127.035484184359!3d37.30269851168418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5c9cf3de33b7%3A0x6162726e8475018a!2z6rK96riw64yA7ZWZ6rWQIO2VmeyDne2ajOq0gA!5e0!3m2!1sko!2skr!4v1684162434377!5m2!1sko!2skr" width="1125" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp09:00 ~ 19:00</span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+						<details>
+							<summary>메뉴 및 가격</summary>
+							<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+						integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+						crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+						integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+						crossorigin="anonymous"></script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+						integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+						crossorigin="anonymous"></script>
+					<script>
+						$('.carousel').carousel({
+							interval: 2000 //기본 5초
+						})
+					</script>
+					<div id="demo" class="carousel slide" data-ride="carousel">
+				
+						<div class="carousel-inner1">
+							<!-- 슬라이드 쇼 -->
+							<div class="carousel-item active">
+								<!--가로-->
+								<img class="d-block w-100" 
+									src="{% static 'images/cafeingmenu1.jpg' %}"
+									alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100"
+									src="{% static 'images/cafeingmenu2.jpg' %}"
+									alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100"
+									src="{% static 'images/cafeingmenu3.jpg' %}"
+									alt="Third slide">
+							</div>
+						<!-- / 슬라이드 쇼 끝 -->
+				
+						<!-- 왼쪽 오른쪽 화살표 버튼 -->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<!-- <span>Previous</span> -->
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<!-- <span>Next</span> -->
+						</a>
+						<!-- / 화살표 버튼 끝 -->
+						
+						<!-- 인디케이터 -->
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li> <!--0번부터시작-->
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+						</ul>
+						<!-- 인디케이터 끝 -->
+					</div>
+						</div>
+						</details>
+					</ul>
+				</div>
+				<br>
+					<div class="btn-cafe">
+						<button id="spreadBtn02" class="cafe">
+							<img src="{% static 'images/bluepot.png' %}">
+						</button>
+						<ul id="hiddenList02" class="example01" style="display: none;">
+							<br><br>
+							<h2>위치🚩</h2>
+							<h3>7강의동(집현관) 1층</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.0601973324183!2d127.03822533918257!3d37.30080759110899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5c9d9856c3d5%3A0xb42ed88116dcb07e!2z6rK96riw64yA7ZWZ6rWQIOynke2YhOq0gA!5e0!3m2!1sko!2skr!4v1684154960930!5m2!1sko!2skr" width="1125" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp학기중: 08:00 ~ 18:30</span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp방학중: 08:00 ~ 17:00</span><br>
+						<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+						<details>
+							<summary>메뉴 및 가격</summary>
+							<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+						integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+						crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+						integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+						crossorigin="anonymous"></script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+						integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+						crossorigin="anonymous"></script>
+					<script>
+						$('.carousel').carousel({
+							interval: 2000 //기본 5초
+						})
+					</script>
+					<div id="demo" class="carousel slide" data-ride="carousel">
+				
+						<div class="carousel-inner1">
+							<!-- 슬라이드 쇼 -->
+							<div class="carousel-item active">
+								<!--가로-->
+								<img class="d-block w-100" 
+									src="{% static 'images/bluepotmenu1.jpg' %}"
+									alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100"
+									src="{% static 'images/bluepotmenu2.jpg' %}"
+									alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100"
+									src="{% static 'images/bluepotmenu3.jpg' %}"
+									alt="Third slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100"
+									src="{% static 'images/bluepotmenu4.jpg' %}"
+									alt="Forth slide">
+							</div>
+						<!-- / 슬라이드 쇼 끝 -->
+				
+						<!-- 왼쪽 오른쪽 화살표 버튼 -->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<!-- <span>Previous</span> -->
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<!-- <span>Next</span> -->
+						</a>
+						<!-- / 화살표 버튼 끝 -->
+						
+						<!-- 인디케이터 -->
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li> <!--0번부터시작-->
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+							<li data-target="#demo" data-slide-to="3"></li>
+						</ul>
+						<!-- 인디케이터 끝 -->
+					</div>
+						</div>
+						</details>
+						</ul>
+					</div>
+					<br>
+					<div class="btn-cafe">
+						<button id="spreadBtn03" class="cafe">
+							<img src="{% static 'images/cafe_dictionary.png' %}">
+						</button>
+						<ul id="hiddenList03" class="example01" style="display: none;">
+							<br>
+							<h2>위치🚩</h2>
+							<h3>종합강의동 1층</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1074.5151900038459!2d127.03643662558378!3d37.30119777563614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b417267f0e1d3%3A0x24364a1d14615711!2z6rK96riw64yA7ZWZ6rWQIOyihe2VqeqwleydmOuPmQ!5e0!3m2!1sko!2skr!4v1684161057121!5m2!1sko!2skr" width="1125" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp08:00 ~ 20:00</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+							<details>
+								<summary>메뉴 및 가격</summary>
+								<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+							integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+							crossorigin="anonymous"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+							integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+							crossorigin="anonymous"></script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+							integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+							crossorigin="anonymous"></script>
+						<script>
+							$('.carousel').carousel({
+								interval: 2000 //기본 5초
+							})
+						</script>
+						<div id="demo" class="carousel slide" data-ride="carousel">
+					
+							<div class="carousel-inner1">
+								<!-- 슬라이드 쇼 -->
+								<div class="carousel-item active">
+									<!--가로-->
+									<img class="d-block w-100" 
+										src="{% static 'images/cafedictionarymenu1.jpg' %}"
+										alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100"
+										src="{% static 'images/cafedictionarymenu2.jpg' %}"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100"
+										src="{% static 'images/cafedictionarymenu3.jpg' %}"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100"
+										src="{% static 'images/cafedictionarymenu4.jpg' %}"
+										alt="Forth slide">
+								</div>
+							<!-- / 슬라이드 쇼 끝 -->
+					
+							<!-- 왼쪽 오른쪽 화살표 버튼 -->
+							<a class="carousel-control-prev" href="#demo" data-slide="prev" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<!-- <span>Previous</span> -->
+							</a>
+							<a class="carousel-control-next" href="#demo" data-slide="next" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<!-- <span>Next</span> -->
+							</a>
+							<!-- / 화살표 버튼 끝 -->
+							
+							<!-- 인디케이터 -->
+							<ul class="carousel-indicators">
+								<li data-target="#demo" data-slide-to="0" class="active"></li> <!--0번부터시작-->
+								<li data-target="#demo" data-slide-to="1"></li>
+								<li data-target="#demo" data-slide-to="2"></li>
+								<li data-target="#demo" data-slide-to="3"></li>
+							</ul>
+							<!-- 인디케이터 끝 -->
+						</div>
+							</div>
+							</details>
+						</ul>
+					</div>
+					<br>
+					<div class="btn-cafe">
+						<button id="spreadBtn04" class="cafe">
+							<img src="{% static 'images/cafe_gee.png' %}">
+						</button>
+						<ul id="hiddenList04" class="example01" style="display: none;">
+							<br>
+							<h2>위치🚩</h2>
+							<h3>이스퀘어 1층</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.4410501406094!2d127.03645808325588!3d37.30072198307909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5d6f8f35e019%3A0x3217fc6b10418d59!2z6rK96riw64yA7ZWZ6rWQIOydtOyKpO2AmOyWtA!5e0!3m2!1sko!2skr!4v1684161584760!5m2!1sko!2skr" width="1125" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp08:00 ~ 20:00</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+							<details>
+								<summary>메뉴 및 가격</summary>
+								<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+							integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+							crossorigin="anonymous"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+							integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+							crossorigin="anonymous"></script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+							integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+							crossorigin="anonymous"></script>
+						<script>
+							$('.carousel').carousel({
+								interval: 2000 //기본 5초
+							})
+						</script>
+						<div id="demo" class="carousel slide" data-ride="carousel">
+					
+							<div class="carousel-inner1">
+								<!-- 슬라이드 쇼 -->
+								<div class="carousel-item active">
+									<!--가로-->
+									<img class="d-block w-100" 
+										src="{% static 'images/cafegeemenu1.jpg' %}"
+										alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100"
+										src="{% static 'images/cafegeemenu2.jpg' %}"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100"
+										src="{% static 'images/cafegeemenu3.jpg' %}"
+										alt="Third slide">
+								</div>
+							<!-- / 슬라이드 쇼 끝 -->
+					
+							<!-- 왼쪽 오른쪽 화살표 버튼 -->
+							<a class="carousel-control-prev" href="#demo" data-slide="prev" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<!-- <span>Previous</span> -->
+							</a>
+							<a class="carousel-control-next" href="#demo" data-slide="next" style="background-color: gray; top: 45%; z-index: 1; width: 30px; height: 30px;">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<!-- <span>Next</span> -->
+							</a>
+							<!-- / 화살표 버튼 끝 -->
+							
+							<!-- 인디케이터 -->
+							<ul class="carousel-indicators">
+								<li data-target="#demo" data-slide-to="0" class="active"></li> <!--0번부터시작-->
+								<li data-target="#demo" data-slide-to="1"></li>
+								<li data-target="#demo" data-slide-to="2"></li>
+							</ul>
+							<!-- 인디케이터 끝 -->
+						</div>
+							</div>
+							</details>
+						</ul>
+					</div>
+					<br>
+					<div class="btn-cafe">
+						<button id="spreadBtn05" class="cafe">
+							<img src="{% static 'images/cafe_dream_us.png' %}">
+						</button>
+						<ul id="hiddenList05" class="example01" style="display: none;">
+							<br>
+							<h2>위치🚩</h2>
+							<h3>경기드림타워(기숙사) 1층</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.8285027129073!2d127.0346887252278!3d37.29919817210901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5c9e4600bc4f%3A0x77197a147ac4763!2z6rK96riw64yA7ZWZ6rWQIOqyveq4sOuTnOumvO2DgOybjA!5e0!3m2!1sko!2skr!4v1684163738946!5m2!1sko!2skr" width="1125" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp08:00 ~ 20:00</span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *주말 및 공휴일 휴무</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+						</ul>
+					</div>
+					<br>
+					<div class="btn-cafe">
+						<button id="spreadBtn06" class="cafe">
+							<img src="{% static 'images/youth_bakery.png' %}">
+						</button>
+						<ul id="hiddenList06" class="example01" style="display: none;">
+							<br>
+							<h2>위치🚩</h2>
+							<h3>9강의동(호연관) 1층</h3>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1287.0405193394986!2d127.03423333014943!3d37.303546692582344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5c9b6f92527d%3A0x3cda285d976da0e1!2z6rK96riw64yA7ZWZ6rWQIO2YuOyXsOq0gA!5e0!3m2!1sko!2skr!4v1684230848980!5m2!1sko!2skr" width="1125" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<span style="font-weight: bold; font-style: italic;">&nbsp&nbsp 운영시간 </span><br>
+							<span style="font-size: medium;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp09:00 ~ 17:00</span><hr style="margin-bottom: 1%; margin-top: 1%;">
+							<details>
+								<summary>메뉴 및 가격</summary>
+								<img src="{% static 'images/청년제빵소menu.jpg' %}" style="width: 80%; height: 80%;">
+							</details>
+						</ul>
+					</div>
+				</section>
+				<!--</article>-->
+		</div>
+	</div>
+</div>
+{% endblock %}
